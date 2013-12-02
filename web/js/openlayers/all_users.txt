@@ -1,0 +1,16 @@
+lat	lon	title	description	iconSize	iconOffset	icon
+38.870301	-1.346517	Produzco y bien(Proveedora/or)	Bonete<br /><a href="/frontend_dev.php/gruposdeconsumo/apply">Regístrate para ver la información</a>	32,37	-15,-37	/images/icons/provider.png	
+42.238301	2.658499	distribbusu(Proveedora/or)	Sales de Llierca<br /><a href="/frontend_dev.php/gruposdeconsumo/apply">Regístrate para ver la información</a>	32,37	-15,-37	/images/icons/provider.png	
+41.270348	-6.46907	nombre comercial(Proveedora/or)	Villarino de los Aires<br /><a href="/frontend_dev.php/gruposdeconsumo/apply">Regístrate para ver la información</a>	32,37	-15,-37	/images/icons/provider.png	
+43.4263	-8.245746	Produzco y Distribuyo(Proveedora/or)	Ares<br /><a href="/frontend_dev.php/gruposdeconsumo/apply">Regístrate para ver la información</a>	32,37	-15,-37	/images/icons/provider.png	
+43.41996	-3.502684	estoy a ver si me avisan(Proveedora/or)	Bárcena de Cicero<br /><a href="/frontend_dev.php/gruposdeconsumo/apply">Regístrate para ver la información</a>	32,37	-15,-37	/images/icons/provider.png	
+40.236421	-4.748336	peptioss(Consumidora/or)	Iglesuela (La)<br /><a href="/frontend_dev.php/gruposdeconsumo/apply">Regístrate para ver la información</a>	32,37	-15,-37	/images/icons/consumer.png	
+42.93017	-8.162196	yywer(Consumidora/or)	Arzúa<br /><a href="/frontend_dev.php/gruposdeconsumo/apply">Regístrate para ver la información</a>	32,37	-15,-37	/images/icons/consumer.png	
+39.66504	-4.210058	Las zorreras(Grupo de consumo)	Cuerva<br /><a href="/frontend_dev.php/gruposdeconsumo/apply">Regístrate para ver la información</a>	32,37	-15,-37	/images/icons/consumergroup.png	
+39.826189	-2.765851	sdfhsdfjd(Grupo de consumo)	Almonacid del Marquesado<br /><a href="/frontend_dev.php/gruposdeconsumo/apply">Regístrate para ver la información</a>	32,37	-15,-37	/images/icons/consumergroup.png	
+42.73465	-3.4662	el grupo grupo grupo(Grupo de consumo)	Cantabrana<br /><a href="/frontend_dev.php/gruposdeconsumo/apply">Regístrate para ver la información</a>	32,37	-15,-37	/images/icons/consumergroup.png	
+42.695928	-8.790709	grupo de grupoias(Grupo de consumo)	Capela (A)<br /><a href="/frontend_dev.php/gruposdeconsumo/apply">Regístrate para ver la información</a>	32,37	-15,-37	/images/icons/consumergroup.png	
+43.21217	-8.689041	perico de los grupos(Grupo de consumo)	Carballo<br /><a href="/frontend_dev.php/gruposdeconsumo/apply">Regístrate para ver la información</a>	32,37	-15,-37	/images/icons/consumergroup.png	
+42.718771	-2.968477	Lagar-tija126126(Grupo de consumo)	Erriberagoitia/Ribera Alta<br /><a href="/frontend_dev.php/gruposdeconsumo/apply">Regístrate para ver la información</a>	32,37	-15,-37	/images/icons/consumergroup.png	
+37.675611	-4.932553	126126(Grupo de consumo)	Carlota (La)<br /><a href="/frontend_dev.php/gruposdeconsumo/apply">Regístrate para ver la información</a>	32,37	-15,-37	/images/icons/consumergroup.png	
+43.21417	-8.691041	grupoasdasdf (Grupo de consumo)	Carballo<br /><a href="/frontend_dev.php/gruposdeconsumo/apply">Regístrate para ver la información</a>	32,37	-15,-37	/images/icons/consumergroup.png	

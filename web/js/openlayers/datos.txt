@@ -1,0 +1,2 @@
+lat	lon	title	description	iconSize	iconOffset	icon
+39.664040	-4.211058	Las zorreras	Cuerva	32,37	0,0	/images/icons/group-2-red.png	

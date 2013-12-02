@@ -1,0 +1,10 @@
+passwordSuccess:
+  metas:
+    title: Password restore
+
+password_sentSuccess:
+  metas:
+    title: Password sent
+
+default:
+  stylesheets:    [default.css, main_background.css,global.css,login/boxes.css] 

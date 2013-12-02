@@ -1,0 +1,392 @@
+announcement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Announcement
+    module:               announcement
+    prefix_path:          /announcement
+    column:               id
+    with_wildcard_routes: true
+
+map_object:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                MapObject
+    module:               map_object
+    prefix_path:          /map_object
+    column:               id
+    with_wildcard_routes: true
+
+faq_move:
+  class: sfRequestRoute
+  url: /faq/move
+  param:
+    module: "faq"
+    action: move
+  requirements:
+    sf_method: [get]
+faq:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Faq
+    module:               faq
+    prefix_path:          /faq
+    column:               id
+    with_wildcard_routes: true
+
+landing:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Landing
+    module:               landing
+    prefix_path:          /landing
+    column:               id
+    with_wildcard_routes: true
+
+product_subcategory:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ProductSubcategory
+    module:               product_subcategory
+    prefix_path:          /product_subcategory
+    column:               id
+    with_wildcard_routes: true
+
+payment_method:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PaymentMethod
+    module:               payment_method
+    prefix_path:          /payment_method
+    column:               id
+    with_wildcard_routes: true
+
+shipping_mode:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ShippingMode
+    module:               shipping_mode
+    prefix_path:          /shipping_mode
+    column:               id
+    with_wildcard_routes: true
+
+consumer_group_state:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ConsumerGroupState
+    module:               consumer_group_state
+    prefix_path:          /consumer_group_state
+    column:               id
+    with_wildcard_routes: true
+
+consumer_state:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ConsumerState
+    module:               consumer_state
+    prefix_path:          /consumer_state
+    column:               id
+    with_wildcard_routes: true
+
+production_type:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ProductionType
+    module:               production_type
+    prefix_path:          /production_type
+    column:               id
+    with_wildcard_routes: true
+
+product_size:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ProductSize
+    module:               product_size
+    prefix_path:          /product_size
+    column:               id
+    with_wildcard_routes: true
+
+purchase_unit:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PurchaseUnit
+    module:               purchase_unit
+    prefix_path:          /purchase_unit
+    column:               id
+    with_wildcard_routes: true
+
+sf_guard_signin:
+  url:   /login
+  param: { module: sfGuardAuth, action: signin }
+
+sf_guard_signout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+
+sf_guard_password:
+  url:   /request_password
+  param: { module: sfGuardAuth, action: password }
+link_category:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                LinkCategory
+    module:               link_category
+    prefix_path:          /link_category
+    column:               id
+    with_wildcard_routes: true
+    
+link_move:
+  class: sfRequestRoute
+  url: /link/move
+  param:
+    module: "link"
+    action: move
+  requirements:
+    sf_method: [get]
+    
+link:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Link
+    module:               link
+    prefix_path:          /link
+    column:               id
+    with_wildcard_routes: true
+category:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Category
+    module:               category
+    prefix_path:          /category
+    column:               id
+    with_wildcard_routes: true
+
+news:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                News
+    module:               news
+    prefix_path:          /news
+    column:               id
+    with_wildcard_routes: true
+
+home:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Home
+    module:               home
+    prefix_path:          /home
+    column:               id
+    with_wildcard_routes: true
+    
+category_move:
+  class: sfRequestRoute
+  url: /category/move
+  param:
+    module: "category"
+    action: move
+  requirements:
+    sf_method: [get]
+news_move:
+  class: sfRequestRoute
+  url: /news/move
+  param:
+    module: "news"
+    action: move
+  requirements:
+    sf_method: [get]
+    
+home_move:
+  class: sfRequestRoute
+  url: /home/move
+  param:
+    module: "home"
+    action: move
+  requirements:
+    sf_method: [get]
+venue:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Venue
+    module:               venue
+    prefix_path:          /venue
+    column:               id
+    with_wildcard_routes: true
+
+event_category:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                EventCategory
+    module:               event_category
+    prefix_path:          /event_category
+    column:               id
+    with_wildcard_routes: true
+
+event:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Event
+    module:               event
+    prefix_path:          /event
+    column:               id
+    with_wildcard_routes: true
+
+publish_state:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PublishState
+    module:               publish_state
+    prefix_path:          /publish_state
+    column:               id
+    with_wildcard_routes: true
+
+consumer_group:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ConsumerGroup
+    module:               consumer_group
+    prefix_path:          /consumer_group
+    column:               id
+    with_wildcard_routes: true
+
+consumer:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Consumer
+    module:               consumer
+    prefix_path:          /consumer
+    column:               id
+    with_wildcard_routes: true
+
+provider_product:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ProviderProduct
+    module:               provider_product
+    prefix_path:          /provider_product
+    column:               id
+    with_wildcard_routes: true
+
+exchange:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Exchange
+    module:               exchange
+    prefix_path:          /exchange
+    column:               id
+    with_wildcard_routes: true
+
+agriculture_type:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                AgricultureType
+    module:               agriculture_type
+    prefix_path:          /agriculture_type
+    column:               id
+    with_wildcard_routes: true
+
+internal_class:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                InternalClass
+    module:               internal_class
+    prefix_path:          /internal_class
+    column:               id
+    with_wildcard_routes: true
+
+producto:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Producto
+    module:               producto
+    prefix_path:          /producto
+    column:               id
+    with_wildcard_routes: true
+
+state:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                State
+    module:               state
+    prefix_path:          /state
+    column:               id
+    with_wildcard_routes: true
+
+provider_image:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ProviderImage
+    module:               provider_image
+    prefix_path:          /provider_image
+    column:               id
+    with_wildcard_routes: true
+
+provider:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Provider
+    module:               provider
+    prefix_path:          /provider
+    column:               id
+    with_wildcard_routes: true
+
+product_category:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ProductCategory
+    module:               product_category
+    prefix_path:          /product_category
+    column:               id
+    with_wildcard_routes: true
+
+product:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Product
+    module:               product
+    prefix_path:          /product
+    column:               id
+    with_wildcard_routes: true
+
+internal_user:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                InternalUser
+    module:               internal_user
+    prefix_path:          /internal_user
+    column:               id
+    with_wildcard_routes: true
+
+file:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                File
+    module:               file
+    prefix_path:          /file
+    column:               id
+    with_wildcard_routes: true
+
+city:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                City
+    module:               city
+    prefix_path:          /city
+    column:               id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: map_object, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

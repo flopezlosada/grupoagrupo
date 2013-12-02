@@ -1,0 +1,40 @@
+sfUserOnlinePlugin
+==================
+This plugin allow you to manage user status by changing user class in your factories.yml to sfUserOnline. This class 
+extends sfUser class and you don't drop any user logic.
+
+## Installation
+
+Run from command line
+
+    php symfony plugin:install sfUserOnlinePlugin
+
+Add or select sfUser method to get user unique ID.
+It can be sfUser::getUserName or sfUser::getId and set it in factories.yml
+
+Set in factories.yml 
+
+    user:
+     class: sfUserOnline
+     param:
+       user_unique_method:  "getId" # sfUser method to get unique user ID
+       memcache_host:       "127.0.0.1"
+       memcache_port:       11211
+       status_lifetime:     600
+       memcache_prefix:     "ustatus_"
+       online_status_class: onlineMemcacheStorage
+
+Retrieve user status
+====================
+
+To get self status
+    
+    $this->getUser()->getStatus();
+
+To set self status
+    
+    $this->getUser()->setStatus($status);
+
+To get other user status
+   
+    $this->getUser()->getStatusForUser($userId);

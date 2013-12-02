@@ -1,0 +1,3 @@
+default:
+  stylesheets:    [main_background.css,sortable.css,galery.css]  
+  javascripts:    [tiny_mce/tiny_mce.js]

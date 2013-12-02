@@ -1,0 +1,4 @@
+dataSuccess:
+  javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js, /sfJQueryUIPlugin/js/jquery-ui.js,/sfJQueryUIPlugin/js/i18n/ui.datepicker-es.js,jquery.validate.min.js]
+  stylesheets:    [pedidos/jquery-ui-1.9.1.custom.css]
+  

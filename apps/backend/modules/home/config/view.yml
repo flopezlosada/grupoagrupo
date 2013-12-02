@@ -1,0 +1,2 @@
+default:
+  stylesheets:    [main_background.css,sortable.css,galery.css]  

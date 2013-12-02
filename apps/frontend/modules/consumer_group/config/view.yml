@@ -1,0 +1,52 @@
+addSuccess:
+  stylesheets:    [main.css, /sfDoctrineApplyPlugin/css/login-apply]
+  javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js, /sfDependentSelectPlugin/js/SelectDependiente.min.js,tiny_mce/tiny_mce.js]
+
+contactSuccess:
+    stylesheets:    [main.css, /sfDoctrineApplyPlugin/css/login-apply]
+  
+fileAddSuccess:
+  stylesheets:    [main.css,  /sfDoctrineApplyPlugin/css/login-apply]
+  javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js,tiny_mce/tiny_mce.js]
+
+eventAddSuccess:
+  stylesheets:    [/sfDoctrineApplyPlugin/css/login-apply,/sfJQueryUIPlugin/css/ui-lightness/jquery-ui.css,main.css]
+  javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js, tiny_mce/tiny_mce.js, /sfJQueryUIPlugin/js/jquery-ui.js,/sfJQueryUIPlugin/js/i18n/ui.datepicker-es.js]
+
+announcementAddSuccess:
+  stylesheets:    [main.css,  /sfDoctrineApplyPlugin/css/login-apply]
+  javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js,tiny_mce/tiny_mce.js]
+
+lookforSuccess:
+  javascripts:    [openlayers/OpenLayers.js]
+
+lookforGroupSuccess:
+  javascripts:    [openlayers/OpenLayers.js]
+  
+aceptSuccess:
+  stylesheets:    [main.css, /sfDoctrineApplyPlugin/css/login-apply]
+
+orderSuccess:
+  stylesheets:    [/sfDoctrineApplyPlugin/css/login-apply,/sfJQueryUIPlugin/css/ui-lightness/jquery-ui.css,main.css]  
+  javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js,  /sfJQueryUIPlugin/js/jquery-ui.js,/sfJQueryUIPlugin/js/i18n/ui.datepicker-es.js]
+
+extendorderSuccess:
+  stylesheets:    [/sfDoctrineApplyPlugin/css/login-apply,/sfJQueryUIPlugin/css/ui-lightness/jquery-ui.css,main.css]  
+  javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js, /sfJQueryUIPlugin/js/jquery-ui.js,/sfJQueryUIPlugin/js/i18n/ui.datepicker-es.js]
+
+orderlistSuccess:
+  stylesheets:    [ /sfDoctrineApplyPlugin/css/login-apply,pedidos/jquery-ui-1.9.1.custom.css,main.css]  
+  javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js, /sfJQueryUIPlugin/js/jquery-ui.js,/sfJQueryUIPlugin/js/i18n/ui.datepicker-es.js,jquery.validate.min.js]
+
+addProductSuccess:
+  stylesheets:    [/sfDoctrineApplyPlugin/css/login-apply,pedidos/jquery-ui-1.9.1.custom.css,main.css]  
+  javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js, /sfJQueryUIPlugin/js/jquery-ui.js,/sfJQueryUIPlugin/js/i18n/ui.datepicker-es.js,jquery.validate.min.js]
+
+purchaseSuccess:
+  stylesheets:    [/sfDoctrineApplyPlugin/css/login-apply,pedidos/jquery-ui-1.9.1.custom.css,main.css]  
+  javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js, /sfJQueryUIPlugin/js/jquery-ui.js,/sfJQueryUIPlugin/js/i18n/ui.datepicker-es.js,jquery.validate.min.js]
+  
+utilSuccess:
+  stylesheets:    [main.css,/fullcalendar/fullcalendar.css]  
+  javascripts:    [jquery-1.8.2.js, jquery-ui-1.8.6.custom.min.js,/fullcalendar/fullcalendar.js]
+    

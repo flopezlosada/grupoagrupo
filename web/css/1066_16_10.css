@@ -1,0 +1,106 @@
+/*
+1066px grid system ~ Core CSS.
+16 columns ~ margin: 10px
+
+Based on the golden grid system - http://code.google.com/p/the-golden-grid/
+by Vladimir Carrer
+
+Created by the Grid System Generator - v1.00
+Learn more ~ http://www.gridsystemgenerator.com/
+*/
+
+/* =Containers
+--------------------------------------------------------------------------------*/
+.main
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1066px;
+}
+
+/* =Grid >> Global
+--------------------------------------------------------------------------------*/
+.g66, .g132, .g198, .g264, .g330, .g396, .g462, .g528, .g594, .g660, .g726, .g792, .g858, .g924, .g990, .g1056 {
+	display: inline;
+	float: left;
+	margin-left: 10px;
+}
+
+/* =Grid >> 16 Columns
+--------------------------------------------------------------------------------*/
+.g66{width:56px;}
+.g132{width:122px;}
+.g198{width:188px;}
+.g264{width:254px;}
+.g330{width:320px;}
+.g396{width:386px;}
+.g462{width:452px;}
+.g528{width:518px;}
+.g594{width:584px;}
+.g660{width:650px;}
+.g726{width:716px;}
+.g792{width:782px;}
+.g858{width:848px;}
+.g924{width:914px;}
+.g990{width:980px;}
+.g1056{width:1046px;}
+
+
+/* =Grid >> 16 Columns - no left margin
+--------------------------------------------------------------------------------*/
+.ml66{margin-left:76px;}
+.ml132{margin-left:142px;}
+.ml198{margin-left:208px;}
+.ml264{margin-left:274px;}
+.ml330{margin-left:340px;}
+.ml396{margin-left:406px;}
+.ml462{margin-left:472px;}
+.ml528{margin-left:538px;}
+.ml594{margin-left:604px;}
+.ml660{margin-left:670px;}
+.ml726{margin-left:736px;}
+.ml792{margin-left:802px;}
+.ml858{margin-left:868px;}
+.ml924{margin-left:934px;}
+.ml990{margin-left:1000px;}
+.ml1056{margin-left:1066px;}
+
+
+.inside{margin-left:0;}
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
+
+.clearfix:after {
+	clear: both;
+	content:' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}

@@ -1,0 +1,24 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        Grupo A Grupo. La web de los grupos de consumo agroecológico y las/os productoras/es ecológicas/os.
+    description:  El proyecto Grupo a Grupo quiere ser la primera pagina web al servicio de los grupos de consumo y los productores ecológicos en toda España. Grupos de consumo agroecológico.
+    keywords:     Grupos de consumo agroecológico, Ecológico, Ecología, Agricultura ecológica, Productores, Consumidores, Productos, Pedidos, Comunidad, Grupo A Grupo
+    language:     es
+    author:       Sodepaz
+    robots:       index, follow
+
+  #stylesheets:    [reset.css, text.css,1066_18_22.css,main.css, /sfDoctrineApplyPlugin/css/login-apply]
+  stylesheets:    [reset.css, text.css,/sfDoctrineApplyPlugin/css/login-apply,main.css]
+
+  javascripts:    [jquery-1.8.2.js, jquery-ui-1.9.1.custom.min.js,tiny_mce/tiny_mce.js]
+
+  has_layout:     true
+  layout:         layout  
+  components:
+    utilities:  [profile, utilities]

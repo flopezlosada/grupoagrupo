@@ -1,0 +1,6 @@
+indexSuccess:
+  stylesheets:    [main.css,/fullcalendar/fullcalendar.css]  
+  javascripts:    [jquery-1.8.2.js, jquery-ui-1.8.6.custom.min.js,/fullcalendar/fullcalendar.js]
+addSuccess:
+  stylesheets:    [main.css,jquery-ui-timepicker-addon.css,/sfJQueryUIPlugin/css/ui-lightness/jquery-ui.css]
+  javascripts:    [jquery-1.8.2.js, jquery-ui-1.8.6.custom.min.js,jquery-ui-timepicker-addon.js]

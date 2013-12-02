@@ -1,0 +1,2 @@
+default:
+  javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js,/tdVideoPlugin/js/flowplayer-3.1.4.min.js, social.js]

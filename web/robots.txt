@@ -1,0 +1,10 @@
+User-agent: *
+Disallow:/apply/
+Disallow:/consumer_group/
+Disallow:/contact
+Disallow:/login
+Disallow:/profile
+Disallow:/js/
+Disallow:/uploads/
+Disallow:/css/
+Disallow:/uploads/

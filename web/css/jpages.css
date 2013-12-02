@@ -1,0 +1,175 @@
+@CHARSET "UTF-8";
+
+.holder {
+    margin: 15px 0;
+}
+
+.holder a {
+    font-size: 12px;
+    cursor: pointer;
+    margin: 0 5px;
+    color: #333;
+}
+
+.holder a:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+.holder a.jp-previous {
+    margin-right: 15px;
+}
+
+.holder a.jp-next {
+    margin-left: 15px;
+}
+
+.holder a.jp-current, a.jp-current:hover {
+    color: #FF4242;
+    font-weight: bold;
+}
+
+.holder a.jp-disabled, a.jp-disabled:hover {
+    color: #bbb;
+}
+
+.holder a.jp-current, a.jp-current:hover, .holder a.jp-disabled, a.jp-disabled:hover {
+    cursor: default;
+    background: none;
+}
+
+.holder span {
+    margin: 0 5px;
+}
+
+#basket_product_list .basket_product_list:hover {
+    background: #cae7bd;
+}
+
+#basket_product_list .basket_product_list {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 10px 10px 10px 10px;
+    float: left;
+    margin: 5px;
+    padding: 10px;
+    width: 120px;
+    border: 1px solid #88c09c;
+    position: relative;
+}
+
+#basket_product_list .basket_product_list div.description_product_basket {
+    min-height: 184px;
+    cursor: pointer;
+    position: relative;
+}
+
+#basket_product_list .basket_product_list img.product_basket_thumb {
+    clear: both;
+    display: block;
+    margin: auto;
+    padding: 1px;
+    padding-top: 10px;
+}
+
+#basket_product_list .basket_product_list span {
+    color: #307360;
+    display: block;
+    padding-bottom: 5px;
+    margin: auto;
+    text-align: center;
+}
+
+#basket_product_list .selected {
+    background: #fca23c;
+    background-image: linear-gradient(bottom, #FCA23C 33%, #FFC35A 67%, #FFEA75 84%);
+	background-image: -o-linear-gradient(bottom, #FCA23C 33%, #FFC35A 67%, #FFEA75 84%);
+	background-image: -moz-linear-gradient(bottom, #FCA23C 33%, #FFC35A 67%, #FFEA75 84%);
+	background-image: -webkit-linear-gradient(bottom, #FCA23C 33%, #FFC35A 67%, #FFEA75 84%);
+	background-image: -ms-linear-gradient(bottom, #FCA23C 33%, #FFC35A 67%, #FFEA75 84%);
+    border: 2px solid #bbc00e;
+    width: 116px;
+}
+#basket_product_list .selected:hover {
+	background: #fca23c;
+    background-image: linear-gradient(bottom, #FCA23C 33%, #FFC35A 67%, #FFEA75 84%);
+	background-image: -o-linear-gradient(bottom, #FCA23C 33%, #FFC35A 67%, #FFEA75 84%);
+	background-image: -moz-linear-gradient(bottom, #FCA23C 33%, #FFC35A 67%, #FFEA75 84%);
+	background-image: -webkit-linear-gradient(bottom, #FCA23C 33%, #FFC35A 67%, #FFEA75 84%);
+	background-image: -ms-linear-gradient(bottom, #FCA23C 33%, #FFC35A 67%, #FFEA75 84%);
+}
+
+#basket_product_list .selected div.description_product_basket {
+    min-height: 180px;
+    cursor: text;
+}
+
+#basket_product_list div.no_selected {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 10px 10px 10px 10px;
+    float: left;
+    margin: 5px;
+    min-height: 170px;
+    padding: 10px;
+    width: 120px;
+    border: 1px solid #88c09c;
+    position: relative;
+}
+
+img.delete_product_basket {
+    border: 0px;
+    float: right;
+    position: absolute;
+    top: -13px;
+    right: -8px;
+    display: none;
+}
+
+.detail_amount_basket {
+    position: absolute;
+    bottom: 0px;
+	display:none;
+}
+
+input.amount_basket[type ="text"] {
+	
+	width:60px;
+    padding: 5px;
+    border: 1px solid #DDDDDD;
+    /*Applying CSS3 gradient*/
+    background: -moz-linear-gradient(center top , #FFFFFF,  #EEEEEE 1px, #FFFFFF 20px);    
+    background: -webkit-gradient(linear, left top, left 20, from(#FFFFFF), color-stop(5%, #EEEEEE) to(#FFFFFF));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBFBFB', endColorstr='#FFFFFF');
+    
+    /*Applying CSS 3radius*/   
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    
+    /*Applying CSS3 box shadow*/
+    -moz-box-shadow: 0 0 2px #DDDDDD;
+    -webkit-box-shadow: 0 0 2px #DDDDDD;
+    box-shadow: 0 0 2px #DDDDDD;
+
+}
+input.amount_basket [type="text"]:hover
+{
+    border:1px solid #cccccc;
+}
+input.amount_basket [type="text"]:focus
+{
+    box-shadow:0 0 2px #FFFE00;
+}
+
+input.amount_basket.error {
+	border:3px solid red;
+	background:#ffcccc;
+}
+
+label.error{
+	display:block;
+	padding:5px;
+	margin:5px 0;
+	color:red;
+}
+
+

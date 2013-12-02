@@ -1,0 +1,24 @@
+searchSuccess:
+  stylesheets:    [reset.css, text.css,1066_18_22.css,main.css,  /sfDoctrineApplyPlugin/css/login-apply,pedidos/jquery-ui-1.9.1.custom.css]
+  javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js,, /sfJQueryUIPlugin/js/i18n/ui.datepicker-es.js, /sfDependentSelectPlugin/js/SelectDependiente.min.js,openlayers/OpenLayers.js]
+ordersSuccess:
+  javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js,  /sfJQueryUIPlugin/js/jquery-ui.js,/sfJQueryUIPlugin/js/i18n/ui.datepicker-es.js,jquery.validate.min.js]
+  stylesheets:    [main.css,pedidos/jquery-ui-1.9.1.custom.css]
+catalogueSuccess:
+  layout: layout_catalogue
+  stylesheets:    [main.css,  /sfDoctrineApplyPlugin/css/login-apply,/sfJQueryUIPlugin/css/ui-lightness/jquery-ui.css]
+  javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js,]  
+purchaseSuccess:
+  layout: layout_catalogue
+  stylesheets:    [main.css,  /sfDoctrineApplyPlugin/css/login-apply,/sfJQueryUIPlugin/css/ui-lightness/jquery-ui.css]
+  javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js,,jquery.validate.min.js]
+orderrejectSuccess:
+   stylesheets:    [reset.css, text.css,main.css,  /sfDoctrineApplyPlugin/css/login-apply]
+   javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js,,jquery.validate.min.js]
+ 
+utilAddSuccess:
+  stylesheets:    [main.css,  /sfDoctrineApplyPlugin/css/login-apply]
+  javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js,,tiny_mce/tiny_mce.js]
+all:
+  stylesheets:    [main.css,  /sfDoctrineApplyPlugin/css/login-apply]
+  javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js, , tiny_mce/tiny_mce.js, /sfJQueryUIPlugin/js/jquery-ui.js,/sfJQueryUIPlugin/js/i18n/ui.datepicker-es.js]   

@@ -1,0 +1,2044 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="EN" target-language="ca" datatype="plaintext" original="messages" date="2013-04-17T17:36:15Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit id="1">
+        <source>Inicio</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Quiénes Somos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>El proyecto</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Contacto</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Política de privacidad</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Final</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Artículos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>página</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>de</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Formulario de contacto con </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Enviar</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Blog</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Enlaces</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>Salir</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>Se han encontrado &lt;strong&gt;%&amp;%&lt;/strong&gt; consumidoras/es</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>Se han encontrado &lt;strong&gt;%&amp;%&lt;/strong&gt; grupos de consumo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>Ver mapa</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>Ver listado</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Debes estár registrada/o para ver los resultados</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Acceder</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>FAQs</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>Acceso</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>Resultados de la búsqueda</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>La consulta no devuelve ningún resultado</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>Prueba de nuevo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>Se han encontrado &lt;strong&gt;%&amp;%&lt;/strong&gt; proveedoras/es</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>Mostrar</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>Búsqueda por cercanía</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>Selecciona una provincia y un municipio e indica la distancia de búsqueda</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>Buscar</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>Indica la distancia de búsqueda</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>Indica un número entero</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Indica un valor mayor de 0</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>Indica la categoría de búsqueda</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="35">
+        <source>Indica el producto de búsqueda</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="36">
+        <source>Indica la provincia de búsqueda</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="37">
+        <source>Indica el municipio de búsqueda</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="38">
+        <source>grupoagrupo.net es un proyecto de SODEPAZ</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="39">
+        <source>Estamos muy interesados en conocer tu opinión y tus sugerencias.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="40">
+        <source>Para ello puedes </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="41">
+        <source>Llamarnos por teléfono: 915228091</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="42">
+        <source>Escribirnos un email: info@grupoagrupo.net</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="43">
+        <source>O rellenar el siguiente formulario:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="44">
+        <source>Formulario de contacto </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="45">
+        <source>Indica el asunto del mensaje</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="46">
+        <source>Indica el cuerpo del mensaje</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="47">
+        <source>Indica tu dirección de correo electrónico</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="48">
+        <source>Indica una dirección de correo electrónico válida</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="49">
+        <source>Administración</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="50">
+        <source>Foro</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="51">
+        <source>Debes poner un valor mayor de 0</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="52">
+        <source>Catálogo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="53">
+        <source>Pedidos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="54">
+        <source>Mi perfil</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="55">
+        <source>Catálogo de la/el </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="56">
+        <source>Productos destacados</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="57">
+        <source>Novedades</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="58">
+        <source>Pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="59">
+        <source>Grupo de consumo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="60">
+        <source>Apertura</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="61">
+        <source>Cierre</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="62">
+        <source>Precio</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="63">
+        <source>Acciones</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="64">
+        <source>El pedido ha sido modificado</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="65">
+        <source>Aceptar Pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="66">
+        <source>Aceptar</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="67">
+        <source>Al aceptar el pedido estás aceptando que Grupo a Grupo lo incluya en tu cuenta de resultados y te cobre por ello. ¿Estás segura/o?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="68">
+        <source>Rechazar Pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="69">
+        <source>Rechazar</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="70">
+        <source>¿Estás segura/o?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="71">
+        <source>Finalizar Pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="72">
+        <source>Finalizar</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="73">
+        <source>Al finalizar el pedido indicas que ya has iniciado su preparación. ¿Estás segura/o?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="74">
+        <source>Retornar el pedido al grupo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="75">
+        <source>Retornar al grupo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="76">
+        <source>Ya está enviado</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="77">
+        <source>Al clicar en "Ya está enviado" indicas que el pedido ya ha sido enviado al grupo. ¿Estás segura/o?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="78">
+        <source>Ver detalle del pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="79">
+        <source>Detalle</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="80">
+        <source>Añadir productos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="81">
+        <source>Añadir Producto</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="82">
+        <source>Indica la cantidad de unidades de producto a comprar</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="83">
+        <source>Indica un número entero. &lt;br&gt;Para números decimales utiliza el punto y no la coma.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="84">
+        <source>Búsqueda de productoras/es</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="85">
+        <source>Esta/e proveedora/or no ha definido su catálogo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="86">
+        <source>Perfil de la/el proveedora/or</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="87">
+        <source>Comentarios: </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="88">
+        <source>Pedido rechazado: </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="89">
+        <source>Fecha de confirmación:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="90">
+        <source>Fecha de aceptación por la/el proveedor:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="91">
+        <source>Fecha de finalización del pedido por la/el proveedor:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="92">
+        <source>Fecha de envío del pedido por la/el proveedor:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="93">
+        <source>Fecha de recepción del pedido por el grupo:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="94">
+        <source>Forma de pago:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="95">
+        <source>Método de envío:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="96">
+        <source>Modificar Producto</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="97">
+        <source>Eliminar</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="98">
+        <source>¿Estas segura/o?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="99">
+        <source>Cantidad:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="100">
+        <source>Indica un número entero. &lt;br&gt;Para decimales utiliza el punto y no la coma</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="101">
+        <source>Añadir productos para otras/os consumidoras/es</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="102">
+        <source>Acceder al catálogo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="103">
+        <source>Tu catálogo no está activo.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="104">
+        <source>Debes incluir algún producto para aparecer en las búsquedas.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="105">
+        <source>Ya tienes una orden abierta con este proveedor</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="106">
+        <source>Abrir pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="107">
+        <source>Nuevo Pedido para la/el %&amp;% </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="108">
+        <source>Catálogo de la/el %&amp;% </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="109">
+        <source>Lista de Cestas</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="110">
+        <source>Productos de la categoría </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="111">
+        <source>Nombre y descripción</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="112">
+        <source>Cantidad</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="113">
+        <source>Incluir</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="114">
+        <source>No disponible</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="115">
+        <source>Quitar destacado</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="116">
+        <source>Destacar producto</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="117">
+        <source>Editar producto</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="118">
+        <source>Borrar producto</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="119">
+        <source>Si borras el prodcuto se borrarán todos los pedidos relacionados que no hayan sido finalizados. Tienes %&amp;% pedidos de este producto</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="120">
+        <source>Quitar disponibilidad</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="121">
+        <source>El producto no se podrá comprar hasta que indiques que de nuevo está disponible, ¿Estás segura/o?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="122">
+        <source>Poner producto disponible</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="123">
+        <source>El producto se podrá comprar de nuevo, ¿Estás segura/o?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="124">
+        <source>Para rechazar el pedido debes indicar las razones en el siguiente cuadro:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="125">
+        <source>Comentarios:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="126">
+        <source>Cancelar</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="127">
+        <source>Debes indicar las razones por las que rechazas este pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="128">
+        <source>El sitio está en construcción, no se pueden aceptar proveedores ni hacer pedidos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="129">
+        <source>Archivos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="130">
+        <source>Ver todos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="131">
+        <source>Anuncios</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="132">
+        <source>Esta/e proveedora/or ya ha sido aceptada/o por tu grupo de consumo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="133">
+        <source>La persona responsable de esta/e proveedora/or es: </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="134">
+        <source>Tenéis un pedido abierto en este momento con este productor</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="135">
+        <source>Cambiar responsable</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="136">
+        <source>Rechazar proveedor</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="137">
+        <source>Aceptar de nuevo este proveedor</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="138">
+        <source>Aceptar este proveedor</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="139">
+        <source>Esta/e proveedora/or no ha sido aceptada/o por tu grupo de consumo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="140">
+        <source>Contactar</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="141">
+        <source>Datos de contacto:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="142">
+        <source>Dirección: </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="143">
+        <source>Teléfono: </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="144">
+        <source>Móvil: </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="145">
+        <source>Email: </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="146">
+        <source>Web: </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="147">
+        <source>No ha definido el catálogo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="148">
+        <source>Listado de pedidos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="149">
+        <source>Ver ficha</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="150">
+        <source>La búsqueda no devuelve ningún resultado</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="151">
+        <source>Utilidades</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="152">
+        <source>Ir al catálogo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="153">
+        <source>Crear una cesta</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="154">
+        <source>Modificar mis datos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="155">
+        <source>Darse de baja de grupoagrupo.net</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="156">
+        <source> Al darte de baja perderás todos los datos y se cancelarán tus pedidos en trámite (actualmente tienes %&amp;% pedidos en trámite) ¿estás segura/o?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="157">
+        <source>Publicar archivo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="158">
+        <source>Crear Evento</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="159">
+        <source>Realizar Anuncio</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="160">
+        <source>We have received your request to recover your username and possibly your password on:
+
+%1%
+
+Tu nombre de usuaria/o es: %USERNAME%
+
+Si has perdido tu contraseña o quieres cambiarla, pincha en el siguiente enlace:
+
+%2%
+
+Y podrás cambiar la contraseña.
+
+Tu contraseña no cambiará a menos que pinches en el enlace y completes el formulario.
+</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="161">
+        <source>&lt;p&gt;
+Por razones de seguridad, hemos enviado un mensaje de confirmación a la 
+dirección de correo electrónica asociada a esta cuenta. Por favor revisa
+tu correo. Tienes que clicar en el link que te llegará en el mensaje para
+poder cambiar tu contraseña. Si no ves el mensaje, revisa la carpeta "spam"
+&lt;/p&gt;
+&lt;p&gt;
+Disculpa las molestias
+&lt;/p&gt;
+</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="162">
+        <source>Gracias por crear una cuenta en %1%.
+
+Para evitar el abuso del sitio, es necesario que active la cuenta haciendo clic en el siguiente enlace:
+
+%2%
+
+Gracias de nuevo por estar con nosotr@s.
+</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="163">
+        <source>Usuarias/os</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="164">
+        <source>Responsable de %1%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="165">
+        <source>[1]</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="166">
+        <source>proveedora/or:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="167">
+        <source>proveedoras/es:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="168">
+        <source>Has olvidado tu nombre de usuario o contraseña: No te preocupes, introduce tu nombre de usuaria/o &lt;strong&gt;o&lt;/strong&gt;
+tu dirección de correo electrónico y clica "Restablecer mi contraseña." Recibirás un email conteniendo tu nombre de usuaria/o y 
+un enlace que te permitirá cambiar tu contraseña.
+</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="169">
+        <source>Reset My Password</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="170">
+        <source>or</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="171">
+        <source>Cancel</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="172">
+        <source>&lt;p&gt;
+Gracias por crear una cuenta en %1%.
+&lt;/p&gt;
+&lt;p&gt;
+Para evitar el abuso del sitio, es necesario que active la cuenta haciendo clic en el siguiente enlace:
+&lt;/p&gt;
+&lt;p&gt;
+%2%
+&lt;/p&gt;
+&lt;p&gt;
+Gracias de nuevo por estar con nosotr@s.
+&lt;/p&gt;
+</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="173">
+        <source>Apply for an Account</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="174">
+        <source>Create My Account</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="175">
+        <source>Debes indicar un nombre de usuaria/o</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="176">
+        <source>&lt;p&gt;
+Hemos recibido una petición para recuperar tu nombre de usuaria/o y/o contraseña en: 
+%1%
+&lt;/p&gt;
+&lt;p&gt;
+Tu nombre de usuaria/o es: %USERNAME%
+&lt;/p&gt;
+&lt;p&gt;
+Si has perdido tu contraseña o quieres cambiarla, pincha en el siguiente enlace:
+&lt;/p&gt;
+&lt;p&gt;
+%2%
+&lt;/p&gt;
+&lt;p&gt;
+Y podrás cambiar la contraseña.&lt;/p&gt;
+&lt;p&gt;Tu contraseña no cambiará a menos que pinches en el enlace y completes el formulario.
+&lt;/p&gt;
+</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="177">
+        <source>There is not any publish </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="178">
+        <source>Se acaba de modificar la fecha de cierre del pedido %&amp;% para la/el %s% %y%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="179">
+        <source>La nueva fecha de cierre del pedido es %&amp;%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="180">
+        <source>La persona responsable del pedido es %&amp;% y su email es %T%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="181">
+        <source>Nuevo Evento</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="182">
+        <source>El grupo de consumo %&amp;% acaba de confirmar el pedido %y%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="183">
+        <source>El precio final del pedido es %&amp;%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="184">
+        <source>Para ver el detalle del pedido debes aceptarlo. Entra en la web para ello.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="185">
+        <source>A continuación tienes una lista de consumidoras/es que se encuentran dentro del rango que has decidido. Las distancias son en línea recta.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="186">
+        <source>El grupo de consumo %s% acaba de abrir un pedido con el nombre de %&amp;%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="187">
+        <source>La fecha de apertura del pedido es %&amp;%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="188">
+        <source>La fecha de cierre del pedido es %&amp;%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="189">
+        <source>La forma de pago es %&amp;%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="190">
+        <source>El método de envío es %&amp;%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="191">
+        <source>Comentarios al pedido: %&amp;%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="192">
+        <source>Listado de pedidos del grupo de consumo </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="193">
+        <source>Pedidos en estado:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="194">
+        <source>Listado de pedidos que gestiona la/el usuaria/o </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="195">
+        <source>Periodo de Realización:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="196">
+        <source>Del</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="197">
+        <source>al</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="198">
+        <source>Fecha de Realización:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="199">
+        <source>Formulario de contacto</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="200">
+        <source>Nuevo Anuncio</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="201">
+        <source>Apertura de pedido con la/el proveedora/or </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="202">
+        <source>Este campo es obligatorio</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="203">
+        <source>Indica la fecha de apertura del pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="204">
+        <source>Indica una fecha válida</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="205">
+        <source>Indica la fecha de cierre del pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="206">
+        <source>Perfil del grupo de consumo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="207">
+        <source>Distancia de relación: </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="208">
+        <source>Fecha de creación: </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="209">
+        <source>Hola </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="210">
+        <source>A partir de ahora eres miembro activo del grupo </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="211">
+        <source>Ya puedes acceder a la web </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="212">
+        <source>y participar en el grupo.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="213">
+        <source>Invitar a participar en el grupo de consumo %&amp;%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="214">
+        <source>Indica los correos electrónicos de las personas que quieres invitar al grupo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="215">
+        <source>Las direcciones deben ir separadas por comas, punto y coma o cada una en una línea</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="216">
+        <source>Cambiar persona responsable del grupo.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="217">
+        <source>Poner como responsable</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="218">
+        <source>Persona responsable</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="219">
+        <source>Editar Pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="220">
+        <source>Editar</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="221">
+        <source>Modificar fechas</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="222">
+        <source>Eliminar pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="223">
+        <source>Si eliminas el pedido, no podrás editarlo ni enviarlo a tu proveedora/or. ¿Estás segura/o?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="224">
+        <source>Cerrar Pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="225">
+        <source>Cerrar</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="226">
+        <source> Al cerrar el pedido las/os miembros de tu grupo ya no podrán editar su pedido individual (aunque el miembro responsable de esta/e proveedora/or sí podrá hacerlo). ¿Estás segura/o?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="227">
+        <source>Fechas</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="228">
+        <source>Confirmar Pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="229">
+        <source>Confirmar</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="230">
+        <source>Al confirmar el pedido se lo harás llegar a tu proveedora/or. ¿Estás segura/o?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="231">
+        <source>Validar Pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="232">
+        <source>Validar</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="233">
+        <source>Al clicar en "Validar" indicáis que aceptáis los cambios propuestos por la/el proveedora/or. ¿Estás segura/o?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="234">
+        <source>Pedido Recibido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="235">
+        <source>Recibido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="236">
+        <source>Al clicar en "Recibido" indicáis que ya tenéis la mercancía. ¿Está segura/o?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="237">
+        <source>Confirmar de nuevo el pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="238">
+        <source>Reconfirmar</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="239">
+        <source>Al clicar en "Reconfirmar" indicáis que aceptáis los cambios propuestos por la/el proveedora/or. ¿Estás segura/o?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="240">
+        <source>Aceptar Proveedora/or</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="241">
+        <source>Selecciona a continuación la/el responsable de la/el proveedora/or.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="242">
+        <source>Selecciona la persona responsable</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="243">
+        <source>%O% como responsable de tu grupo de consumo, %&amp;%, acaba de confirmar el pedido %y%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="244">
+        <source>Has recibido una petición de unirse al grupo de consumo </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="245">
+        <source> por parte de </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="246">
+        <source>Accede a la web </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="247">
+        <source>Para aceptar o rechazar la petición.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="248">
+        <source>Últimos post del foro</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="249">
+        <source>Listado de invitaciones válidas enviadas</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="250">
+        <source>Dirección correo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="251">
+        <source>Estado</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="252">
+        <source>Fecha de envío</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="253">
+        <source>Fecha de activación</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="254">
+        <source>Reenviar</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="255">
+        <source>Has recibido una invitación para participar en el grupo de consumo %&amp;%.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="256">
+        <source>Para activar la invitación, en primer lugar debes elegir un nombre de usuaria/o y contraseña. </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="257">
+        <source>El perfil de este grupo no es público</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="258">
+        <source>Se acaba de abrir un pedido para la/el %s% %y% con el nombre de %&amp;%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="259">
+        <source>Indica a continuación los datos del pedido.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="260">
+        <source>Delete %type%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="261">
+        <source>Are you sure?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="262">
+        <source>Edit %type%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="263">
+        <source>Listado de miembros del grupo de consumo.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="264">
+        <source>Dar de baja</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="265">
+        <source>Responsable de grupo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="266">
+        <source>Responsable de proveedora/or</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="267">
+        <source>Nombre</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="268">
+        <source>Responsable</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="269">
+        <source>La/el %s% %y% ha sido aceptada/o en tu grupo de consumo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="270">
+        <source>Tú eres la persona responsable de este %y%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="271">
+        <source>A partir de ahora, podrás gestionar los pedidos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="272">
+        <source>Extensión de la fecha del pedido: "</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="273">
+        <source>Nuevo Archivo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="274">
+        <source>Aquí tienes el pedido segregado. También puedes verlo a través de la web</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="275">
+        <source>La/el consumidora/or %&amp;% ha hecho el siguiente pedido:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="276">
+        <source>El precio total del pedido de %)% asciende a %&amp;% €</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="277">
+        <source>Aún no formas parte de un grupo de consumo.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="278">
+        <source>Crear grupo de consumo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="279">
+        <source>Buscar grupos cercanos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="280">
+        <source>Buscar gente cercana</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="281">
+        <source>Al darte de baja perderás todos los datos ¿estás segura/o?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="282">
+        <source>Formas parte del grupo de consumo: </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="283">
+        <source>Revisar peticiones pendientes</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="284">
+        <source>No hay peticiones pendientes</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="285">
+        <source>Cambiar persona responsable</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="286">
+        <source>Modificar datos del grupo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="287">
+        <source>Gestión de pedidos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="288">
+        <source>Buscar proveedoras/es</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="289">
+        <source>Invitar a participar en el grupo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="290">
+        <source>Revisar el estado de las invitaciones enviadas (%&amp;%)</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="291">
+        <source>No hay invitaciones enviadas</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="292">
+        <source>Revisar miembros</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="293">
+        <source>Eventos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="294">
+        <source>Buscar gente cercana al grupo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="295">
+        <source>Contactar con todo el grupo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="296">
+        <source>Darse de baja del grupo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="297">
+        <source>Proveedoras/es aceptadas/os</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="298">
+        <source>No hay proveedoras/es aceptadas/os</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="299">
+        <source>Estás a la espera de formar parte del grupo </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="300">
+        <source>Contactar con el grupo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="301">
+        <source>Recordar petición</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="302">
+        <source>Anular petición</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="303">
+        <source>La/el responsable del grupo de consumo %y% te ha enviado una invitación para unirte a su grupo en Grupo a grupo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="304">
+        <source>Para aceptar la invitación sólo tienes que pinchar en este enlace %y% y rellenar tus datos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="305">
+        <source>Las invitaciones caducan en 1 semana a partir del momento en que recibes este correo electrónico</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="306">
+        <source>Muchas gracias por participar en http://grupoagrupo.net</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="307">
+        <source>Últimas/os proveedoras/os aceptadas/os</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="308">
+        <source>Su petición de incorporación no ha sido aceptada por el grupo </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="309">
+        <source>En cualquier caso, igualmente puedes acceder a la web </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="310">
+        <source>como consumidora/or individual.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="311">
+        <source>Indica a continuación los datos del nuevo grupo de consumo.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="312">
+        <source>Indica tu nombre</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="313">
+        <source>Indica tu municipio</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="314">
+        <source>Es necesario indicar una distancia para que el sistema sepa realizar búsquedas por cercanía</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="315">
+        <source>Indica tu provincia</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="316">
+        <source>Por favor, indica un email válido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="317">
+        <source>A partir de ahora, podéis hacer pedidos a esta/e %y%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="318">
+        <source>Proveedora/or</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="319">
+        <source>Listado de peticiones pendientes de incorporación al grupo.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="320">
+        <source>Pedir incorporación</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="321">
+        <source>Listado de proveedoras/es aceptadas/os</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="322">
+        <source>Detalle del pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="323">
+        <source>Producto</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="324">
+        <source>Euros</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="325">
+        <source>Total:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="326">
+        <source>Finalizar pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="327">
+        <source>Cantidad sin definir</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="328">
+        <source>Indica la cantidad de unidades de producto a comprar. Indica 0 si no quieres definir la cantidad.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="329">
+        <source>Debes poner un valor mayor o igual a 0</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="330">
+        <source>Este producto lo vendo como %&amp;%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="331">
+        <source>Categoría: </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="332">
+        <source>Subcategoría: </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="333">
+        <source>&lt;strong&gt;Origen:&lt;/strong&gt; %&amp;% </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="334">
+        <source>- %&amp;%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="335">
+        <source>&lt;strong&gt;Tipo de producción:&lt;/strong&gt; %&amp;%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="336">
+        <source>(No disponible)</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="337">
+        <source>Producto destacado</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="338">
+        <source>Unidad de venta:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="339">
+        <source>&lt;strong&gt;Precio:&lt;/strong&gt; %&amp;% €</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="340">
+        <source>Descripción:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="341">
+        <source>Indica la cantidad de producto: </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="342">
+        <source>Volver al catálogo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="343">
+        <source>Si borras el producto se borrarán todos los pedidos relacionados que no hayan sido finalizados. Tienes %&amp;% pedidos de este producto</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="344">
+        <source>Cesta destacada</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="345">
+        <source>Listado de productos de la cesta</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="346">
+        <source>Destacar cesta</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="347">
+        <source>Editar cesta</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="348">
+        <source>Borrar cesta</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="349">
+        <source>Si borras la cesta se borrarán todos los pedidos relacionados que no hayan sido finalizados. Tienes %&amp;% pedidos de esta cesta</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="350">
+        <source>La cesta no se podrá comprar hasta que indiques que de nuevo está disponible, ¿Estás segura/o?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="351">
+        <source>Poner cesta disponible</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="352">
+        <source>La cesta se podrá comprar de nuevo, ¿Estás segura/o?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="353">
+        <source>Añadir productos a la cesta %&amp;%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="354">
+        <source>Selecciona los productos que quieras e indica la cantidad de producto en caso de ser necesario.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="355">
+        <source>Quitar de la cesta</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="356">
+        <source>Primero</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="357">
+        <source>Anterior</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="358">
+        <source>Siguiente</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="359">
+        <source>Último</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="360">
+        <source>Indica un número entero. Para números decimales utiliza el punto y no la coma.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="361">
+        <source>Debes poner un valor positivo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="362">
+        <source>Nuevo producto</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="363">
+        <source>Volver a tu perfil</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="364">
+        <source>Introduce un número mayor que cero sin decimales</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="365">
+        <source>Indica la categoría del producto</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="366">
+        <source>Indica la descripción corta del producto</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="367">
+        <source>La longitud máxima es de 150 caracteres</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="368">
+        <source>Indica la subcategoría del producto</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="369">
+        <source>Indica el producto</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="370">
+        <source>Debes indicar el precio final del producto</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="371">
+        <source>Debes indicar una pequeña descripción o nombre para el producto</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="372">
+        <source>Debes indicar tu actividad respecto al producto</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="373">
+        <source>Debes indicar el país de procedencia del producto</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="374">
+        <source>Debes indicar la provincia de procedencia del producto</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="375">
+        <source>Nueva cesta de productos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="376">
+        <source>Para crear una cesta de productos, el primer paso es indicar los datos generales de la cesta. Después te pediremos que incluyas los productos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="377">
+        <source>Debes indicar una pequeña descripción o nombre para  la cesta</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="378">
+        <source>Debes indicar el precio final de la cesta</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="379">
+        <source>Preguntas frecuentes</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="380">
+        <source>Perfil de la/el consumidora/or</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="381">
+        <source>Fecha de participación: </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="382">
+        <source>El perfil de este usuario no es público</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="383">
+        <source>En línea</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="384">
+        <source>Invitadas/os</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="385">
+        <source>Listado de Categorías de enlaces</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="386">
+        <source>Licencia</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="387">
+        <source>Pincha aquí para ver la página</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="388">
+        <source>Enlaces de la categoría %&amp;%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="389">
+        <source>Esta categoría cuenta con </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="390">
+        <source> enlaces</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="391">
+        <source>Esta categoría no tiene enlaces</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="392">
+        <source>enlaces</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="393">
+        <source>Acceso a usuarias/os</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="394">
+        <source>Reset Your Password</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="395">
+        <source>Create a New Account</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="396">
+        <source>Bienvenida/o a la red Grupo a Grupo.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="397">
+        <source>Te has dado de alta como grupo de consumo.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="398">
+        <source>Ahora debes completar tus datos personales</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="399">
+        <source>Una vez hecho pasarás a formar parte del grupo de consumo: &lt;strong&gt;%&amp;%&lt;/strong&gt;</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="400">
+        <source>El primer paso es completar tus datos personales.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="401">
+        <source>Indica tus apellidos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="402">
+        <source>Debes aceptar la política de protección de datos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="403">
+        <source>Por favor, indica una URL válida</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="404">
+        <source>La página a la que intentas acceder es para usuarias/os registradas/os. </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="405">
+        <source>Indica tu nombre comercial</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="406">
+        <source>Tablón del grupo de consumo %5%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="407">
+        <source>Borrar</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="408">
+        <source>Inicio de temporada: </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="409">
+        <source>Fin de temporada: </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="410">
+        <source>Grupos de Consumo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="411">
+        <source>Otras</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="412">
+        <source>Pedidos abiertos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="413">
+        <source>Ir a tu perfil de usuaria/o</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="414">
+        <source>My %util%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="415">
+        <source>Estadísticas</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="416">
+        <source>Grupos de consumo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="417">
+        <source>Proveedoras/es</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="418">
+        <source>Pedidos tramitados</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="419">
+        <source>Productos en venta</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="420">
+        <source>Acceder a tu grupo de consumo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="421">
+        <source>No hay ningún pedido.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="422">
+        <source>Modificar datos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="423">
+        <source>Añadir imágenes</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="424">
+        <source>Nuevas/os proveedoras/es</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="425">
+        <source>Nuevos grupos de consumo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="426">
+        <source>Productoras/es que acaban de actualizar su catálogo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="427">
+        <source>Leer más</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="428">
+        <source>Nuevas Funcionalidades</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="429">
+        <source>Mejoras en el sistema de pedidos: ya es posible imprimir y ver el resumen, además de ser mucho más intuitivo.</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="430">
+        <source>Agradecimientos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="431">
+        <source>Orden de pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="432">
+        <source>Grupo de consumo: </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="433">
+        <source>Proveedora/or: </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="434">
+        <source>Resumen del pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="435">
+        <source>Precio Unitario</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="436">
+        <source>Total</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="437">
+        <source>Total Pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="438">
+        <source>Consumidora/or</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="439">
+        <source> Al cerrar el pedido las/os miembros de tu grupo ya no podrán editar su pedido individual 
+            (aunque el miembro responsable de esta/e proveedora/or sí podrá hacerlo). ¿Estás segura/o?</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="440">
+        <source>Imprimir pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="441">
+        <source>Imprimir Pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="442">
+        <source>Contactar con la/el proveedora/or</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="443">
+        <source>Resumen</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="444">
+        <source>Detallado</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="445">
+        <source>Consumidores</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="446">
+        <source>En rojo los productos que han sido modificados en el pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="447">
+        <source>Indica un número entero. Para decimales utiliza el punto y no la coma</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="448">
+        <source>Total Pedido: </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="449">
+        <source>Proveedora/or:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="450">
+        <source>Grupo de consumo:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="451">
+        <source>Coste Total:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="452">
+        <source>Fecha de apertura:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="453">
+        <source>Fecha de cierre:</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="454">
+        <source>Twitter</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="455">
+        <source>Facebook</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="456">
+        <source>Proveedora/or para grupos de consumo: </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="457">
+        <source>Categorías</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="458">
+        <source>Tienes un pedido sin finalizar con esta/e proveedora/or, no puedes abrir otro pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="459">
+        <source>Tenéis un pedido sin finalizar en este momento con esta/e proveedora/or</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="460">
+        <source>Grupos de consumo. </source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="461">
+        <source>List of internal %type%s from consumer group %consumer_group%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="462">
+        <source>List of %type%s</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="463">
+        <source>List of %type%s of provider %&amp;%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="464">
+        <source>Add %&amp;%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="465">
+        <source>Descargar %&amp;%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="466">
+        <source>Listado de invitaciones para la/el usuaria/o %&amp;%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="467">
+        <source>Invitación del grupo de consumo %&amp;%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="468">
+        <source>Rechazar Invitación</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="469">
+        <source>Aceptar Invitación</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="470">
+        <source>Tienes una invitación de un grupo de consumo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="471">
+        <source>Ver Archivos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="472">
+        <source>Ver Anuncios</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="473">
+        <source>Ver Eventos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="474">
+        <source>Aquí tienes el pedido. También puedes verlo a través de la web</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="475">
+        <source>Finalizar tu pedido</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="476">
+        <source>Añadir productos a la cesta</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="477">
+        <source>Página no encontrada</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="478">
+        <source>La página a la que intentas acceder no existe, por favor revisa la dirección y si el problema persiste ponte en contacto con nosotr@s. Muchas gracias y disculpa
+    las molestias</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="479">
+        <source>Enviado por %&amp;%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="480">
+        <source>Nuevos productos en venta</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="481">
+        <source>There is not any publish post</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="482">
+        <source>Calendario de Eventos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="483">
+        <source>Añadir evento</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="484">
+        <source>List of internal event  from consumer group %consumer_group%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="485">
+        <source>There is not any publish event</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="486">
+        <source>Eventos del Grupo de Consumo</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="487">
+        <source>List of event  from provider %provider%</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="488">
+        <source>Delete event</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="489">
+        <source>Edit event</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="490">
+        <source>Indica el nombre del evento</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="491">
+        <source>Indica la categoría del evento</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="492">
+        <source>Indica la fecha de inicio del evento</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="493">
+        <source>Indica la descripción del evento</source>
+        <target/>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

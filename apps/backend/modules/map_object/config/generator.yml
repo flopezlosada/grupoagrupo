@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           MapObject
+    theme:                 deneb
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          map_object
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        city_id: 
+          label: Municipio
+        state_id: 
+          label: Provincia
+        city: 
+          label: Municipio
+        state: 
+          label: Provincia
+      list:    
+        title: Listado de contactos para el mapa
+        display: [id, =name, city, state, email]
+      filter:  
+        class: false
+      form:    ~
+      edit:    ~
+      new:     
+        title: Nuevo Contacto para el Mapa

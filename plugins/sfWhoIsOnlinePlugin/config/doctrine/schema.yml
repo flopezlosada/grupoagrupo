@@ -1,0 +1,41 @@
+sfWhoIsOnlineUser:
+  columns:
+    ip:
+      type: string
+      length: 16
+      primary: true    
+    is_user:
+      type: boolean
+      notnull: true
+    ts:
+      type: integer
+      length: 12
+    page:
+      type: string
+      length: 512
+    country:
+      type: string
+      length: 64
+    countrycode:
+      type: string
+      length: 2
+    city:
+      type: string
+      length: 64
+    browser:
+      type: string
+      length: 32
+  indexes:
+    ip:
+      fields:
+        ip:
+          sorting: ASC
+      type: unique
+    countrycode:
+      fields:
+        countrycode:
+          sorting: ASC
+    browser:
+      fields:
+        browser:
+          sorting: ASC 

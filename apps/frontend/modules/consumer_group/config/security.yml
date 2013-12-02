@@ -1,0 +1,11 @@
+check_invitation:
+  is_secure: false
+checked_invitation:
+  is_secure: false
+util:
+  is_secure: false
+utilShow:
+  is_secure: false  
+default:
+  is_secure: true
+  

@@ -1,0 +1,91 @@
+body {
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    background: #fff;
+    color: #4f4f4f;
+    background-image: url("../images/mainbg.png");
+    background-repeat: repeat-x;
+}
+
+.main {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#header {
+    height: 170px;
+    color: #fff;
+	background: url("../images/semillas.png") no-repeat top right;
+}
+
+#header a:link, #header a:visited {
+    color: #fff;
+}
+
+#header a:hover, #header a:active {
+    color: #95d98b;
+}
+
+.logo {
+    background: url("../images/left-top.png") no-repeat;    
+    padding-left: 30px;
+    float: left;
+	
+}
+
+.logo h1 {
+    font-family: Georgia, Verdana, Geneva, Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: normal;
+    margin-top: 30px;
+}
+
+.logo span {
+    font-family: Georgia, Verdana, Geneva, Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 14px;
+}
+
+#header nav {
+   
+    margin-top: 40px;
+}
+
+#header nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+#content {
+    background: #ffffff;
+    padding: 10px;
+}
+
+#footer {
+    padding: 10px;
+    background: #307360;
+    min-height: 30px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #307360;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+    color: #2f1a1a;
+}
+
+h2, h3 {
+    color: #025159;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+

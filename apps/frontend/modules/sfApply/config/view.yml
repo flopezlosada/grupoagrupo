@@ -1,0 +1,2 @@
+default:
+  stylesheets:    [reset.css, text.css, main.css,/sfDoctrineApplyPlugin/css/login-apply.css,/sfJQueryUIPlugin/css/start/jquery-ui-1.9.1.custom.css]

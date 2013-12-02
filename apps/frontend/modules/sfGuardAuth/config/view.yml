@@ -1,0 +1,2 @@
+default:
+  stylesheets:    [main.css, /sfDoctrineApplyPlugin/css/login-apply,/sfJQueryUIPlugin/css/ui-lightness/jquery-ui.css]    

@@ -1,0 +1,110 @@
+/*
+1066px grid system ~ Core CSS.
+18 columns ~ margin: 22px
+
+Based on the golden grid system - http://code.google.com/p/the-golden-grid/
+by Vladimir Carrer
+
+Created by the Grid System Generator - v1.00
+Learn more ~ http://www.gridsystemgenerator.com/
+*/
+
+/* =Containers
+--------------------------------------------------------------------------------*/
+.main
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1066px;
+}
+
+/* =Grid >> Global
+--------------------------------------------------------------------------------*/
+.g58, .g116, .g174, .g232, .g290, .g348, .g406, .g464, .g522, .g580, .g638, .g696, .g754, .g812, .g870, .g928, .g986, .g1044 {
+	display: inline;
+	float: left;
+	margin-left: 22px;
+}
+
+/* =Grid >> 18 Columns
+--------------------------------------------------------------------------------*/
+.g58{width:36px;}
+.g116{width:94px;}
+.g174{width:152px;}
+.g232{width:210px;}
+.g290{width:268px;}
+.g348{width:326px;}
+.g406{width:384px;}
+.g464{width:442px;}
+.g522{width:500px;}
+.g580{width:558px;}
+.g638{width:616px;}
+.g696{width:674px;}
+.g754{width:732px;}
+.g812{width:790px;}
+.g870{width:848px;}
+.g928{width:906px;}
+.g986{width:964px;}
+.g1044{width:1022px;}
+
+
+/* =Grid >> 18 Columns - no left margin
+--------------------------------------------------------------------------------*/
+.ml58{margin-left:80px;}
+.ml116{margin-left:138px;}
+.ml174{margin-left:196px;}
+.ml232{margin-left:254px;}
+.ml290{margin-left:312px;}
+.ml348{margin-left:370px;}
+.ml406{margin-left:428px;}
+.ml464{margin-left:486px;}
+.ml522{margin-left:544px;}
+.ml580{margin-left:602px;}
+.ml638{margin-left:660px;}
+.ml696{margin-left:718px;}
+.ml754{margin-left:776px;}
+.ml812{margin-left:834px;}
+.ml870{margin-left:892px;}
+.ml928{margin-left:950px;}
+.ml986{margin-left:1008px;}
+.ml1044{margin-left:1066px;}
+
+
+.inside{margin-left:0;}
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
+
+.clearfix:after {
+	clear: both;
+	content:' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}

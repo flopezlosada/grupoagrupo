@@ -1,0 +1,117 @@
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @copyright  Copyright (c) 2008 Irubin Consulting Inc. DBA Varien (http://www.varien.com)
+ * @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/* LOGIN
+ *******************************************************************************/
+body {
+    background:transparent url(/images/header_bg_background.jpg) repeat-x scroll 0 0;
+    font-family: Verdana, Arial;
+    font-size: 11px;
+}
+
+#page-login {
+    background: #f8f8f8;
+    text-align: center;
+}
+
+.login-container {
+    width: 581px;
+    margin: 170px auto;
+}
+
+.login-form {
+    padding: 27px 57px 35px 57px;
+    background: url(/images/login_box_bg.jpg) no-repeat;
+    text-align: left;
+}
+
+.login-form .input-left {
+    float: left;
+}
+
+.login-form .input-right {
+    float: right;
+}
+
+.login-form .input-box input.input-text {
+    width: 224px;
+}
+
+.login-form h2 {
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+.login-form label {
+    font-weight: normal;
+}
+
+.login-form .form-buttons {
+    margin: 12px 0 0 0;
+    clear: both;
+    text-align: right;
+}
+
+.login-box .bottom {
+    width: 581px;
+    height: 5px;
+    background: url(/images/login_box_bottom.jpg) no-repeat;
+    overflow: hidden;
+}
+
+.login-container .legal {
+    margin: 0;
+    background: url(/images/login_box_legal_bg.gif) no-repeat;
+    padding: 8px 8px 5px 8px;
+    font-size: .95em;
+}
+
+.login-form .validation-advice {
+    margin: 3px 0 0 0;
+}
+
+.login-form .forgot-link {
+    margin: 0 17px 0 0;
+    text-align: right;
+}
+
+button, .form-button {    
+    background: #FFAC47 url(/images/btn_bg.gif) repeat-x scroll 0 100%;
+    border-color: #ED6502 #A04300 #A04300 #ED6502;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: verdana,arial, helvetica, sans-serif;
+    font-size: 12px;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: normal;
+    padding: 0 7px 1px;
+    text-align: center !important;
+    white-space: nowrap;
+	margin-top:10px;
+}
+

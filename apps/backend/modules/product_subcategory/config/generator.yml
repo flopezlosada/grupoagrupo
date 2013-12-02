@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ProductSubcategory
+    theme:                 deneb
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          product_subcategory
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        name:
+          label: Nombre
+        content:
+          label: Descripción
+      list:    
+        display: [product_category, =name]
+      filter:  
+        display: [product_category_id]
+      form:    ~
+      edit:    ~
+      new:     ~

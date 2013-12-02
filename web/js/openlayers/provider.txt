@@ -1,0 +1,2 @@
+lat	lon	title	description	iconSize	iconOffset	icon
+43.42096	-3.502684	estoy a ver si me avisan(Proveedora/or)	Bárcena de Cicero<br /><a href="/frontend_dev.php/provider/profile/id/8">Ver perfil</a>	32,37	-15,-37	/images/icons/provider.png	

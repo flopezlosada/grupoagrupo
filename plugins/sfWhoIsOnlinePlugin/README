@@ -1,0 +1,63 @@
+sfWhoIsOnline plugin
+===================
+
+`sfWhoIsOnlinePlugin` is a symfony plugin which enables showing count of currently online users direct on your website.
+
+Moreover, it locates users by theirs IPs. It uses [Geobytes IpLocator feature](http://www.geobytes.com/IpLocator.htm), if fails it tries to locate via [HostIp service](http://api.hostip.info/). All user sessions are stored in database and after 5 minute timeout (configurable) are deleted.
+
+Installation
+- - - - - - -
+
+* Download latest package and extract it to your plugins directory or use symfony command
+
+        $ symfony plugin:install sfWhoIsOnlinePlugin
+
+* Build model and create table in your database
+
+        $ symfony propel:build-model
+        $ symfony propel:build-sql
+        $ symfony propel:insert-sql
+
+* Add `sfWhoIsOnlineFilter` to your filters.yml
+
+        [filters.yml]
+        rendering: ~
+        security:  ~
+        ...
+        sfWhoIsOnline:
+          class: sfWhoIsOnlineFilter
+        ...
+        cache:     ~
+        execution: ~
+
+Now user sessions should be stored in database to sfWhoIsOnlineUser table.
+
+Show number of users on website
+- - - - - - - - - - - - - - - -
+
+You can user one of prepared components. To do this you have to enable sfWhoIsOnline module in your settings.yml.
+
+        [settings.yml]
+        all:
+          .settings:
+            enabled_modules: [ sfWhoIsOnline ]
+
+### Prepared components:
+
+* Number of online users: `<?php include_component('sfWhoIsOnline','online');?>`
+
+        <div class="whoIsOnline"> 
+          <em>1</em> ONLINE
+        </div>
+
+* List of countries: `<?php include_component('sfWhoIsOnline','codes');?>`
+
+* List of users with info: `<?php include_component('sfWhoIsOnline','users');?>`
+
+* Number of online users with openable panel with locations: `<?php include_component('sfWhoIsOnline','combined');?>`
+
+Planned fatures
+- - - - - - - -
+
+* styleable lists of users
+* show how many users are on current page

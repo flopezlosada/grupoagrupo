@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Category
+    theme:                 deneb
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          category
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:                
+      fields:  ~
+      list: 
+        sort: [position,asc] 
+        display: [=id, =name, position]  
+        title: Lista de Categorías de Noticias
+        object_actions:          
+          _edit:         ~
+          _delete:       ~          
+          newnews:
+            action: newnews
+            label: Añadir Noticia
+      filter:  
+        class: false
+      form:    ~
+      edit:    ~
+      new:     ~

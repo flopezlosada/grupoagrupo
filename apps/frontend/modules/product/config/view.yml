@@ -1,0 +1,13 @@
+addSuccess:
+  stylesheets:    [reset.css, text.css,1066_18_22.css,main.css,  /sfDoctrineApplyPlugin/css/login-apply,/sfJQueryUIPlugin/css/ui-lightness/jquery-ui.css]
+  javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js, /sfJQueryUIPlugin/js/i18n/ui.datepicker-es.js, /sfDependentSelectPlugin/js/SelectDependiente.min.js,tiny_mce/tiny_mce.js]
+add_basketSuccess:  
+  javascripts:    [jquery.validate.min.js,tiny_mce/tiny_mce.js]  
+showSuccess:
+  stylesheets:    [reset.css, text.css,1066_18_22.css,main.css,  /sfDoctrineApplyPlugin/css/login-apply,/sfJQueryUIPlugin/css/ui-lightness/jquery-ui.css]
+  javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js,jquery.validate.min.js]  
+basket_add_productSuccess:
+  javascripts:    [jPages.min.js,jquery.validate.min.js]
+  stylesheets:    [reset.css, text.css,1066_18_22.css,main.css,  jpages.css]
+show_basketSuccess:
+    javascripts:    [jquery.validate.min.js]

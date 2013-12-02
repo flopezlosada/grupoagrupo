@@ -1,0 +1,230 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+orders_show:
+  url: /gruposdeconsumo/ver/pedido/:slug
+  param: {module: orders, action: show}
+
+my_profile:
+  url: /gruposdeconsumo/mi-perfil/
+  param: {module: profile, action: data}
+
+
+provider_profile:
+  url: /gruposdeconsumo/proveedor/:slug
+  param: {module: provider, action: profile}
+
+provider_catalogue:
+  url: /gruposdeconsumo/catalogo/proveedor/:slug
+  param: {module: provider, action: catalogue}
+
+  
+util_show_announcement:
+  url: /gruposdeconsumo/anuncio/:slug
+  param: {module: consumer_group, action: utilShow, type: announcement}
+
+util_show_file:
+  url: /gruposdeconsumo/archivo/:slug
+  param: {module: consumer_group, action: utilShow, type: file}
+
+util_list_announcement_provider:
+  url: /gruposdeconsumo/proveedor/anuncios/:slug
+  param: {module: provider, action: util, type: announcement}
+
+util_list_file_provider:
+  url: /gruposdeconsumo/proveedor/archivos/:slug
+  param: {module: provider, action: util, type: file}  
+  
+util_list_event_provider:
+  url: /gruposdeconsumo/proveedor/eventos/:slug
+  param: {module: event, action: provider}  
+
+util_list_announcement:
+  url: /gruposdeconsumo/anuncios
+  param: {module: consumer_group, action: util, type: announcement}
+
+util_list_file:
+  url: /gruposdeconsumo/archivos
+  param: {module: consumer_group, action: util, type: file}
+  
+util_list_announcement_group:
+  url: /gruposdeconsumo/anuncios/grupo
+  param: {module: consumer_group, action: util, type: announcement, consumer_group_only: true}
+
+util_list_file_group:
+  url: /gruposdeconsumo/archivos/grupo
+  param: {module: consumer_group, action: util, type: file, consumer_group_only: true}  
+  
+event:
+  url: /gruposdeconsumo/eventos/:slug
+  param: {module: event, action: show}
+
+events:
+  url: /gruposdeconsumo/eventos
+  param: {module: event, action: index}
+  
+group_events:
+  url: /gruposdeconsumo/eventos/grupo/:slug
+  param: {module: event, action: show_group}
+  
+sitemap_xml:
+  url: /sitemap.xml
+  param: { module: sfSimpleGoogleSitemap, action: index }
+  
+blog_news:
+  url: /gruposdeconsumo/blog_news/:slug  
+  class:    sfDoctrineRoute
+  options:
+    model:    News
+    type:     object   
+  param: {module: news, action: show}
+  
+blog:
+  url: /gruposdeconsumo/blog
+  param: {module: blog, action: index}
+  
+link:
+  url: /gruposdeconsumo/enlaces
+  param: {module: link, action: index}  
+
+showLinkCategory:
+  url: /gruposdeconsumo/:slug
+  param: {module: link, action: showCategory}    
+
+showLink:
+  url: /gruposdeconsumo/:slug/enlace
+  param: {module: link, action: showLink}   
+   
+products:
+  url: /gruposdeconsumo/product/:id
+  param: {module: product, action: show}
+  
+provider_product:
+  url: /gruposdeconsumo/:provider_slug/:provider_product_slug
+  param: {module: product, action: show}
+    
+providers:
+  url: /gruposdeconsumo/provider/:id
+  param: {module: provider, action: profile}  
+    
+invitation:
+  url: /invitation/:code
+  param: {module: consumer_group, action: check_invitation}
+
+contact:
+  url: /gruposdeconsumo/contacto
+  param: {module: home, action:guestContact }
+
+search_help:
+  url:   /gruposdeconsumo/search_help
+  param: { module: landing, action: show, route: search_help }
+  
+sell_help:
+  url:   /gruposdeconsumo/venta-a-grupos-de-consumo
+  param: { module: landing, action: show, route: sell_help }  
+
+create_group_help:
+  url:   /gruposdeconsumo/crear-grupo-de-consumo
+  param: { module: landing, action: show, route: create_group_help }
+
+privacity:
+  url:   /gruposdeconsumo/política-de-privacidad
+  param: { module: landing, action: show, route: privacity }
+  
+greetings:
+  url:   /gruposdeconsumo/agradecimientos
+  param: { module: landing, action: show, route: greetings }  
+
+about:
+  url:   /gruposdeconsumo/quienes-somos
+  param: { module: landing, action: show, route: about }
+
+project:
+  url:   /gruposdeconsumo/project
+  param: { module: landing, action: show, route: project }     
+
+admin:
+  url: /admin
+  param: {module: consumer_group, action: admin}
+  
+admin_provider:
+  url: /admin_provider
+  param: {module: provider, action: admin}
+  
+search:
+  url: /gruposdeconsumo/search
+  param: {module: search, action: index}
+apply:
+  url:  /gruposdeconsumo/apply
+  param: { module: sfApply, action: apply }
+
+reset:
+  url: /reset
+  param: { module: sfApply, action: reset }
+
+resetRequest:
+  url: /reset-request
+  param: { module: sfApply, action: resetRequest }
+
+validate:
+  url: /confirm/:validate
+  param: { module: sfApply, action: confirm }
+
+settings:
+  url: /settings
+  param: { module: sfApply, action: settings }
+
+# We implement the missing sf_guard_password feature from sfGuardPlugin
+sf_guard_password:
+  url: /reset-request
+  param: { module: sfApply, action: resetRequest }
+
+sf_guard_signin:
+  url:   /gruposdeconsumo/login
+  param: { module: sfGuardAuth, action: signin }
+
+sf_guard_signout:
+  url:   /gruposdeconsumo/logout
+  param: { module: sfGuardAuth, action: signout }
+
+sf_guard_password:
+  url:   /request_password
+  param: { module: sfGuardAuth, action: password }
+
+blog_news:
+  url: /gruposdeconsumo/blog_news/:slug  
+  class:    sfDoctrineRoute
+  options:
+    model:    News
+    type:     object   
+  param: {module: news, action: show}
+  
+blog:
+  url: /gruposdeconsumo/blog
+  param: {module: blog, action: index}
+  
+link:
+  url: /gruposdeconsumo/enlaces
+  param: {module: link, action: index}  
+
+showLinkCategory:
+  url: /gruposdeconsumo/enlaces/:slug
+  param: {module: link, action: showCategory}    
+
+showLink:
+  url: /gruposdeconsumo/enlace/:slug/
+  param: {module: link, action: showLink}   
+
+# default rules
+homepage:
+  url:   /
+  param: { module: home, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

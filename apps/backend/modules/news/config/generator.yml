@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           News
+    theme:                 deneb
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          news
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~      
+      filter:  
+        display: [category_id]
+      form:    ~
+      edit:    ~
+      new:     ~
+      list:        
+        display: [=id,=category,=name, position, _portada]
+        sort: [position,desc]
+        max_per_page: 12
+        object_actions:
+          promote:          { label: "Subir", action: "demote" }
+          demote:        { label: "Bajar", action: "promote" }
+          _edit:      ~
+          _delete:    ~
+        

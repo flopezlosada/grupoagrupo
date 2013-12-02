@@ -1,0 +1,30 @@
+all:
+  utils_list: 12
+  default:
+    languages:
+      - [es, Español]          
+    translations:      
+      es: Español      
+  project_name: "Grupo a Grupo"
+  month:
+    list:     [Enero,Febrero,Marzo,Abril,Mayo,Junio,Julio,Agosto,Septiembre,Octubre,Noviembre,Diciembre]
+  default:    
+    mailfrom: 
+    mailto: 
+
+  
+  .utils:
+    utilities_list: 
+      1: file
+      2: announcement
+      3: event
+      
+  i18n-extract-additional:
+    enabled: true
+    paths:
+      - '<?php echo sfConfig::get('sf_plugins_dir') . '/' . 'sfDoctrineApplyPlugin'; ?>'
+  sfWhoIsOnline:
+    timeout: 900      
+  twitter_feed:
+    refresh_time_in_seconds: 60 # update every minute
+    limit: 5 # limit the list to the 10 most recent tweets

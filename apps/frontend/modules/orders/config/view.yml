@@ -1,0 +1,3 @@
+showSuccess:
+  stylesheets:    [/sfDoctrineApplyPlugin/css/login-apply,pedidos/jquery-ui-1.9.1.custom.css,main.css]  
+  javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js, jquery.validate.min.js]

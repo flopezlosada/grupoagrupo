@@ -1,0 +1,10 @@
+contactSuccess:
+  stylesheets:    [reset.css, text.css,main.css, /sfDoctrineApplyPlugin/css/login-apply]
+guestContactSuccess:
+  stylesheets:    [reset.css, text.css,main.css, /sfDoctrineApplyPlugin/css/login-apply]    
+searchSuccess:
+  javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js, /sfJQueryUIPlugin/js/jquery-ui.js]
+default:
+  stylesheets:    [reset.css, text.css,main.css,social/jquery-ui.css]
+  javascripts:    [jquery-1.4.3.min.js, jquery-ui-1.8.6.custom.min.js,/sfJQueryUIPlugin/js/i18n/ui.datepicker-es.js, /sfDependentSelectPlugin/js/SelectDependiente.min.js,openlayers/OpenLayers.js, /sfJQueryUIPlugin/js/jquery-ui.js]
+    

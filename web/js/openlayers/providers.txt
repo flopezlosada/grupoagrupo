@@ -1,0 +1,3 @@
+lat	lon	title	description	iconSize	iconOffset	icon
+39.864330	-3.611917	Pepito de los palotes(Proveedora/or)	Huerta de Valdecarábanos	32,37	-15,-37	/images/icons/provider.png	
+40.233421	-4.749336	sasdg(Proveedora/or)	Iglesuela (La)	32,37	-15,-37	/images/icons/provider.png	

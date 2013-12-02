@@ -1,0 +1,50 @@
+<?php
+/*
+© Copyright 2012 diphda.net && Sodepaz
+info@diphda.net
+
+
+Este programa es software libre. Puede redistribuirlo y/o modificarlo bajo los términos de la Licencia
+Pública General de GNU según es publicada por la Free Software Foundation, bien de la versión 3 de dicha
+Licencia o bien (según su elección) de cualquier versión posterior.
+
+Este programa se distribuye con la esperanza de que sea útil, pero SIN NINGUNA GARANTÍA, incluso sin la
+garantía MERCANTIL implícita o sin garantizar la CONVENIENCIA PARA UN PROPÓSITO PARTICULAR. Véase la
+Licencia Pública General de GNU para más detalles.
+
+Debería haber recibido una copia de la Licencia Pública General junto con este programa. Si no ha sido así,
+escriba a la Free Software Foundation, Inc., en 675 Mass Ave, Cambridge, MA 02139, EEUU.
+
+La licencia se encuentra en el archivo licencia.txt*/
+?>
+<?php use_helper("Custom")?>
+<?php include_partial('provider/flashes') ?>
+<h3><?php echo __("Catálogo de la/el proveedora/or ").$provider->name?></h3>
+<ul>
+    <?php foreach($provider->getCatalogue() as $product):?>
+    	<li>
+    	    <?php echo link_to($product->Product->name,"product/show?id=".$product->id)?>
+    	    <?php if ($sf_user->getInternalClassName()=="Consumer"):?>
+                <?php if ($sf_user->getInternalUser()->canBuyProduct($product->provider_id)):?>
+                	<?php if ($sf_user->getInternalUser()->hasBuyProduct($product->provider_id, $product->Product->id,$sf_user->getInternalUser()->getProviderOpenOrderObject($product->provider_id)->id)):?>
+                	    <!-- La variable $order es la orden de pedido para el producto determinado de un consumidor-->
+                	    <?php $consumer_order=$sf_user->getInternalUser()->getBuyProduct($product->provider_id, $product->Product->id,$sf_user->getInternalUser()->getProviderOpenOrderObject($product->provider_id)->id)?>
+                	    <?php echo __("Has pedido %s% %t%",array("%s%"=>deleteRightZero($consumer_order->amount),"%t%"=>$product->PurchaseUnit->name))?>
+                	    <?php echo link_to(image_tag("basket_edit").__("Modificar"),"consumer/modifyProduct?product_id=".$product->id."&consumer_order_id=".$consumer_order->id)?>
+                	    <?php echo link_to(image_tag("basket_delete").__("Eliminar"),"consumer/deleteConsumerOrder?consumer_order_id=".$consumer_order->id."&provider_id=".$product->provider_id,array("onclick"=>"return confirm('¿Estas segura/o?' )"))?>
+                	<?php else:?>
+                        <?php echo link_to(image_tag("basket_put").__("Comprar"),"consumer/addProduct?product_id=".$product->id)?>
+                    <?php endif;?>
+                <?php endif;?>
+            <?php endif;?>    	
+    	</li>
+    <?php endforeach;?>
+</ul>  
+ <?php if ($sf_user->getInternalClassName()=="Consumer"):?>
+ <?php $order=$sf_user->getInternalUser()->getProviderOpenOrderObject($product->provider_id)?>
+     <?php if ($sf_user->getInternalUser()->hasStartOrder($order->id)):?>
+     	<?php echo __("El precio total de tu pedido asciende a %&% €" ,array("%&%"=>$sf_user->getInternalUser()->getTotalPriceOrder($order->id)))?>
+     <?php else:?>
+     <p><?php echo __("Aún no has realizado ninguna compra")?></p>
+     <?php endif;?>
+ <?php endif;?>

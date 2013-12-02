@@ -1,0 +1,1955 @@
+options:
+  type: INNODB
+  collate: utf8_unicode_ci
+  charset: utf8
+Provider:
+  tableName: provider
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true      
+    name:
+      type: string(255)
+      notnull: true
+    surname: 
+      type: string(255)
+      notnull: false
+    contact:
+      type: string(255)
+      notnull: false
+    image:
+      type: string(255)
+      notnull: false
+    content:
+      type: string(2147483647)
+      notnull: false    
+    address:
+      type: string(255)
+      notnull: false    
+    state_id: 
+      type: integer(3)
+      notnull: true
+    city_id:
+      type: integer(3)
+      notnull: true   
+    place_id: 
+      type: integer(3)
+      notnull: false
+    cp:
+      type: integer(5)
+      notnull: false
+    phone:
+      type: string(255)
+      notnull: false
+    celular:
+      type: string(255)
+      notnull: false
+    email:
+      type: string(255)
+      notnull: false
+    web:
+      type: string(255)
+      notnull: false    
+    segregated_orders:
+      type: bool
+      notnull: true
+    provider_state_id:
+      type: integer(3)
+      notnull: true
+    publish_state_id:
+      type: integer(3)
+      notnull: true
+    provider_type_id:
+      type: integer(3)
+      notnull: true
+    information:
+      type: boolean
+      notnull: true
+      default: 0
+    user_id:
+      type: integer(5)
+      notnull: true
+  relations:       
+    City: 
+      local: city_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    Place: 
+      local: place_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE  
+    State: 
+      local: state_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    sfGuardUser: 
+      local: user_id
+      foreign: id      
+      type: one
+      foreignType: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    Product:
+      class: Product
+      refClass: ProviderProduct
+      local: provider_id
+      foreign: product_id
+      foreignAlias: product_list      
+    ProviderState:
+      local: provider_state_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    ProviderType:
+      local: provider_type_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    PublishState:
+      local: publish_state_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE     
+    ShippingMode:
+      class: ShippingMode
+      refClass: ProviderShippingMode
+      local: provider_id
+      foreign: shipping_mode_id
+      foreignAlias: shipping_mode_list
+    PaymentMethod:
+      class: PaymentMethod
+      refClass: ProviderPaymentMethod
+      local: provider_id
+      foreign: payment_method_id
+      foreignAlias: payment_method_list
+    AceptedProviderConsumerGroup:
+      class: ConsumerGroup
+      refClass: AceptedProviderConsumerGroup
+      local: provider_id
+      foreign: consumer_group_id
+      foreignAlias: acepted_provider_consumer_group_list
+  actAs:    
+    Timestampable:
+    Sortable:
+    Sluggable: { fields: [name], uniqueBy: [] }
+ProviderState:
+  tableName: provider_state
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      notnull: true    
+  actAs:    
+    Timestampable:
+    Sortable:
+    I18n:
+      fields: [name]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang, name] }           
+ProviderImage:
+  tableName: provider_image
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true  
+    provider_id:
+      type: integer(3)
+      notnull: true    
+    image:
+      type: string(255)
+      notnull: true
+    name:
+      type: string(255)
+      notnull: true
+    content:
+      type: string(2147483647)
+      notnull: false
+  actAs:    
+    Timestampable:
+    Sortable:
+    Sluggable: { fields: [name], uniqueBy: [name] }
+  relations:
+    Provider: 
+      local: provider_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE  
+ProviderPaymentMethod:
+  tableName: provider_payment_method
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true  
+    provider_id:
+      type: integer(3)
+      notnull: true
+    payment_method_id:
+      type: integer(3)
+      notnull: true   
+    amount:
+      type: float(10,2)
+      notnull: false
+  relations:
+    Provider:
+      foreignAlias: ProviderPaymentMethod
+      onDelete: CASCADE
+      onUpdate: CASCADE    
+    PaymentMethod:
+      foreignAlias: ProviderPaymentMethod
+      onDelete: CASCADE
+      onUpdate: CASCADE    
+  actAs:
+    Timestampable:
+    Sortable:       
+PaymentMethod:
+  tableName: payment_method
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      notnull: true    
+  actAs:
+    Sortable:
+    I18n:
+      fields: [name]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang, name] }        
+  relations:
+    Provider:
+      class: Provider
+      refClass: ProviderPaymentMethod
+      local: payment_method_id
+      foreign: provider_id
+      foreignAlias: payment_method
+ProviderShippingMode:
+  tableName: provider_shipping_mode
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true  
+    provider_id:
+      type: integer(3)
+      notnull: true
+    shipping_mode_id:
+      type: integer(3)
+      notnull: true
+  relations:
+    Provider:
+      foreignAlias: ProviderShippingMode
+      onDelete: CASCADE
+      onUpdate: CASCADE    
+    ShippingMode:
+      foreignAlias: ProviderShippingMode
+      onDelete: CASCADE
+      onUpdate: CASCADE    
+  actAs:
+    Timestampable:
+    Sortable:       
+ShippingMode:
+  tableName: shipping_mode
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      notnull: true    
+  actAs:
+    Sortable:
+    I18n:
+      fields: [name]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang, name] }        
+  relations:
+    Provider:
+      class: Provider
+      refClass: ProviderShippingMode
+      local: shipping_mode_id
+      foreign: provider_id
+      foreignAlias: shipping_mode      
+ProviderType:
+  tableName: provider_type
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      notnull: true    
+  actAs:
+    Sortable:
+    I18n:
+      fields: [name]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang, name] }      
+Product:
+  tableName: product
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    product_category_id:
+      type: integer(3)
+      notnull: true
+    product_subcategory_id:
+      type: integer(3)
+      notnull: true      
+    name:
+      type: string(255)
+      notnull: true
+    content:
+      type: string(2147483647)
+      notnull: true  
+    image:
+      type: string(255)
+      notnull: false
+  relations:
+    ProductCategory: 
+      local: product_category_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE       
+    ProductSubcategory: 
+      local: product_subcategory_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE           
+  actAs:    
+    Timestampable:
+    Sortable:
+    I18n:
+      fields: [name, content]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang] }
+ProductCategory:
+  tableName: product_category
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true    
+    name:
+      type: string(255)
+      notnull: true
+    content:
+      type: string(2147483647)
+      notnull: false
+  actAs:    
+    Timestampable:
+    Sortable:
+    I18n:
+      fields: [name, content]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang, name] }     
+ProductSubcategory:
+  tableName: product_subcategory
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true 
+    product_category_id:
+      type: integer(3)
+      notnull: true         
+    name:
+      type: string(255)
+      notnull: true
+    content:
+      type: string(2147483647)
+      notnull: false
+  actAs:    
+    Timestampable:
+    Sortable:
+    I18n:
+      fields: [name, content]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang, name] }        
+  relations:
+    ProductCategory: 
+      local: product_category_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE                   
+ProviderProduct:
+  tableName: provider_product
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true  
+    provider_id:
+      type: integer(3)
+      notnull: true
+    product_category_id:
+      type: integer(3)
+      notnull: true   
+    product_subcategory_id:
+      type: integer(3)
+      notnull: true         
+    product_id:
+      type: integer(3)
+      notnull: true
+    short_description:
+      type: string(150)
+      notnull: false
+    content:
+      type: string(2147483647)
+      notnull: false
+    image:
+      type: string(255)
+      notnull: false       
+    purchase_unit_id:
+      type: integer(3)
+      notnull: false
+    price:
+      type: float(10,2)
+      notnull: true    
+    is_in_stock:
+      type: boolean
+      notnull: true    
+    product_size_id:
+      type: integer(3)
+      notnull: false    
+    production_type_id:
+      type: integer(3)
+      notnull: false
+    country_id:
+      type: integer(3)
+      notnull: false
+    state_id:
+      type: integer(3)
+      notnull: false
+    provider_type_id:
+      type: integer(3)
+      notnull: false
+    is_highlight:
+      type: boolean
+      notnull: true
+    highlight_date:
+      type: date
+      notnull: false 
+    is_active:
+      type: boolean
+      notnull: true
+     #esto es por si es una cesta o un producto simple. supongo que habrá más después. 
+    provider_product_type_id:
+      type: integer(3)
+      notnull: true
+  relations:
+    Provider:
+      foreignAlias: ProviderProduct
+      onDelete: CASCADE
+      onUpdate: CASCADE    
+    Product:
+      foreignAlias: ProviderProduct
+      onDelete: CASCADE
+      onUpdate: CASCADE 
+    ProductCategory: 
+      local: product_category_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE  
+    ProductSubcategory: 
+      local: product_subcategory_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE      
+    ProductSize: 
+      local: product_size_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE 
+    PurchaseUnit: 
+      local: purchase_unit_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE       
+    ProviderProductType: 
+      local: provider_product_type_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE             
+    ProductionType: 
+      local: production_type_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE 
+    ProviderType: 
+      local: provider_type_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE 
+    State: 
+      local: state_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE  
+    Country: 
+      local: country_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE   
+  actAs:
+    Timestampable:
+    Sortable:  
+    Sluggable: { fields: [short_description], uniqueBy: [] }
+TierPrice:
+  tableName: tier_price
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true  
+    provider_id:
+      type: integer(3)
+      notnull: true    
+    product_id:
+      type: integer(3)
+      notnull: true
+    amount: 
+      type: integer(5)
+      notnull: true
+    discount:
+      type: integer(2)
+      notnull: true
+  relations:
+    Provider:
+      local: provider_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE   
+    Product:
+      local: product_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+  indexes:
+    global_index:
+      fields:
+        provider_id: []       
+        product_id: []
+        amount: []
+        discount: []
+      type: unique  
+  actAs:
+    Timestampable:
+    Sortable: 
+ProductSize:   
+  tableName: product_size
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      notnull: true   
+  actAs:
+    Sortable:
+    I18n:
+      fields: [name, content]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang, name] }            
+PurchaseUnit:   
+  tableName: purchase_unit
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      notnull: true   
+  actAs:
+    Sortable:
+    I18n:
+      fields: [name]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang, name] }    
+ProviderProductType:   
+  tableName: provider_product_type
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      notnull: true   
+  actAs:
+    Sortable:
+    I18n:
+      fields: [name]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang, name] }            
+ProductionType:   
+  tableName: production_type
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      notnull: true    
+  actAs:
+    Sortable:  
+    I18n:
+      fields: [name, content]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang, name] }                   
+Consumer:
+  tableName: consumer
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      notnull: true
+    surname:
+      type: string(255)
+      notnull: true
+    image:
+      type: string(255)
+      notnull: false
+    address:
+      type: string(255)
+      notnull: false    
+    city_id:
+      type: integer(3)
+      notnull: true
+    state_id: 
+      type: integer(3)
+      notnull: true
+    place_id: 
+      type: integer(3)
+      notnull: false
+    cp:
+      type: integer(5)
+      notnull: false
+    phone:
+      type: string(255)
+      notnull: false
+    celular:
+      type: string(255)
+      notnull: false
+    email:
+      type: string(255)
+      notnull: false
+    web:
+      type: string(255)
+      notnull: false
+    distance:
+      type: integer(3)
+      notnull: true
+    consumer_group_id:
+      type: integer(3)
+      notnull: false 
+    consumer_group_join_date:
+      type: date
+      notnull: false
+    consumer_state_id:
+      type: integer(3)
+      notnull: true
+    publish_state_id:
+      type: integer(3)
+      notnull: true    
+    information:
+      type: boolean
+      notnull: true
+      default: 0  
+    user_id:
+      type: integer(5)
+      notnull: true  
+  relations:    
+    sfGuardUser: 
+      local: user_id
+      foreign: id      
+      type: one
+      foreignType: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    ConsumerGroup: 
+      local: consumer_group_id
+      foreign: id
+      type: one      
+      onUpdate: CASCADE   
+    City: 
+      local: city_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    Place: 
+      local: place_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE  
+    State: 
+      local: state_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE  
+    ConsumerState:
+      local: consumer_state_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    PublishState:
+      local: publish_state_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+  actAs:
+    Timestampable:
+    Sortable:             
+State:
+  tableName: state
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      notnull: true
+  actAs:    
+    Timestampable:
+    Sortable:
+    I18n:
+      fields: [name]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang, name] }
+Country:
+  tableName: country
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      notnull: true
+  actAs:    
+    Timestampable:
+    Sortable:
+    I18n:
+      fields: [name]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang, name] }        
+City:
+  tableName: city
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    state_id:
+      type: integer(3)
+      notnull: true
+    name:
+      type: string(255)
+      notnull: true
+    latitude:
+      type: float(10,6)
+      notnull: true
+    longitude:
+      type: float(10,6)
+      notnull: true
+    altitude:
+      type: float(14,6)
+      notnull: true
+  relations:
+    State: 
+      local: state_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE          
+  actAs:    
+    Timestampable:
+    Sortable:
+    I18n:
+      fields: [name]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang, name] }
+Place:
+  tableName: place
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    state_id:
+      type: integer(3)
+      notnull: true
+    city_id:
+      type: integer(3)
+      notnull: true  
+    name:
+      type: string(255)
+      notnull: true
+  relations:
+    State: 
+      local: state_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE          
+    City: 
+      local: city_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+  actAs:    
+    Timestampable:
+    Sortable:
+    I18n:
+      fields: [name]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang, name] }      
+ConsumerGroupState:
+  tableName: consumer_group_state
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      notnull: true
+  actAs:
+    Sortable: 
+    I18n:
+      fields: [name]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang, name] }                    
+ConsumerGroup:
+  tableName: consumer_group
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true  
+    name:
+      type: string(255)
+      notnull: true 
+    content:
+      type: string(2147483647)
+      notnull: false 
+    image:
+      type: string(255)
+      notnull: false
+    address:
+      type: string(255)
+      notnull: false  
+    email: 
+      type: string(255)
+      notnull: true  
+    web:
+      type: string(255)
+      notnull: true  
+    city_id:
+      type: integer(3)
+      notnull: true
+    state_id: 
+      type: integer(3)
+      notnull: true
+    place_id: 
+      type: integer(3)
+      notnull: false      
+    cp:
+      type: integer(5)
+      notnull: false
+    distance:
+      type: integer(3)
+      notnull: true
+    consumer_trust_id:
+      type: integer(3)
+      notnull: true 
+    consumer_group_state_id:
+      type: integer(3)
+      notnull: true   
+    publish_state_id:
+      type: integer(3)
+      notnull: true  
+    segregated_orders:
+      type: bool
+      notnull: true
+  relations:
+    PublishState:
+      local: publish_state_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    Consumer: 
+      local: consumer_trust_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    ConsumerGroupState: 
+      local: consumer_group_state_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    City: 
+      local: city_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    Place: 
+      local: place_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE  
+    State: 
+      local: state_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    ConsumerList:
+      local: id
+      foreign: consumer_group_id
+      class: Consumer
+      type: many
+      foreignType: one
+    AceptedProviderConsumerGroup:
+      class: Provider
+      refClass: AceptedProviderConsumerGroup
+      local: consumer_group_id
+      foreign: provider_id
+      foreignAlias: acepted_provider_consumer_group_list
+  actAs:    
+    Timestampable:
+    Sortable:
+    Sluggable: { fields: [name], uniqueBy: [name] }
+File:
+  tableName: file
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    user_id:
+      type: integer(5)
+      notnull: true  
+    consumer_group_id:
+      type: integer(3)
+      notnull: false
+    name:
+      type: string(255)
+      notnull: true 
+    content:
+      type: string(2147483647)
+      notnull: false
+    file:
+      type: string(255)
+      notnull: true 
+    publish_state_id:
+      type: integer(3)
+      notnull: true  
+    published: 
+      type: boolean
+      notnull: true
+      default: 1
+  relations:   
+    PublishState: 
+      local: publish_state_id
+      foreign: id      
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE    
+    sfGuardUser: 
+      local: user_id
+      foreign: id      
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE      
+    ConsumerGroup: 
+      local: consumer_group_id
+      foreign: id
+      type: one      
+      onUpdate: CASCADE                 
+  actAs:    
+    Timestampable:
+    Sortable:
+    I18n:
+      fields: [name,content]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang] }                   
+ImageGroup:
+  tableName: image
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    user_id:
+      type: integer(5)
+      notnull: true  
+    consumer_group_id:
+      type: integer(3)
+      notnull: false
+    name:
+      type: string(255)
+      notnull: true 
+    content:
+      type: string(2147483647)
+      notnull: false
+    image:
+      type: string(255)
+      notnull: true 
+    publish_state_id:
+      type: integer(3)
+      notnull: true  
+    published: 
+      type: boolean
+      notnull: true
+      default: 1
+  relations:   
+    PublishState: 
+      local: publish_state_id
+      foreign: id      
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE    
+    sfGuardUser: 
+      local: user_id
+      foreign: id      
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    ConsumerGroup: 
+      local: consumer_group_id
+      foreign: id
+      type: one      
+      onUpdate: CASCADE                 
+  actAs:    
+    Timestampable:
+    Sortable:    
+Announcement:  
+  tableName: announcement
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    user_id:
+      type: integer(5)
+      notnull: true
+    consumer_group_id:
+      type: integer(3)
+      notnull: false  
+    name:
+      type: string(255)
+      notnull: true 
+    content:
+      type: string(2147483647)
+      notnull: true   
+    image:
+      type: string(255)
+      notnull: 
+    publish_state_id:
+      type: integer(3)
+      notnull: true  
+    published: 
+      type: boolean
+      notnull: true
+      default: 1
+  relations:   
+    sfGuardUser: 
+      local: user_id
+      foreign: id      
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE 
+    PublishState: 
+      local: publish_state_id
+      foreign: id      
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE   
+    ConsumerGroup: 
+      local: consumer_group_id
+      foreign: id
+      type: one      
+      onUpdate: CASCADE              
+  actAs:    
+    Timestampable:
+    Sortable:
+    I18n:
+      fields: [name, content]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang] }    
+PublishState:  
+  tableName: publish_state
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      notnull: true
+  actAs:    
+    Timestampable:
+    Sortable:
+    I18n: 
+      fields: [name]
+ConsumerState:  
+  tableName: consumer_state
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      notnull: true
+  actAs:    
+    Timestampable:
+    Sortable:
+    I18n: 
+      fields: [name]      
+Event:
+  tableName: event
+  columns: 
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name: 
+      type: string(255)
+      notnull: true
+    content:
+      type: string(2147483647)
+      notnull: true
+    publish_state_id:
+      type: integer(3)
+      notnull: true    
+    published: 
+      type: boolean
+      notnull: true
+      default: 1
+    venue_id:
+      type: integer(3)
+      notnull: false
+    event_category_id:
+      type: integer(3)
+      notnull: true
+    start_date: 
+      type: datetime
+      notnull: true
+    end_date: 
+      type: datetime
+      notnull: false    
+    image:
+      type: string(255)
+      notnull: false
+    user_id:
+      type: integer(5)
+      notnull: true
+    consumer_group_id:
+      type: integer(3)
+      notnull: false
+  actAs:
+    Sortable: 
+    Timestampable:
+    I18n: 
+      fields: [name, content]
+      actAs:
+        Sluggable: { fields: [name], uniqueBy: [lang] }    
+  relations:
+    ConsumerGroup: 
+      local: consumer_group_id
+      foreign: id
+      type: one      
+      onUpdate: CASCADE      
+    EventCategory: 
+      local: event_category_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    Venue: 
+      local: venue_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE   
+    sfGuardUser: 
+      local: user_id
+      foreign: id      
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE 
+    PublishState: 
+      local: publish_state_id
+      foreign: id      
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE        
+EventCategory:
+  tableName: event_category
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name: 
+      type: string(255)
+      notnull: true
+    content:
+      type: string(2147483647)
+      notnull: true
+  actAs:
+    Sortable: 
+    Timestampable:
+    I18n: 
+      fields: [name, content]
+      actAs:
+        Sluggable: {fields: [name], uniqueBy: [lang, name] }    
+Venue:
+  tableName: venue
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name: 
+      type: string(255)
+      notnull: true
+    content:
+      type: string(2147483647)
+      notnull: true
+    image:
+      type: string(255)
+      notnull: false
+  actAs:
+    Sortable: 
+    Timestampable:
+    I18n: 
+      fields: [name, content]
+      actAs:
+        Sluggable: {fields: [name], uniqueBy: [lang, name] }                  
+        
+InternalClass:
+  tableName: internal_class
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name: 
+      type: string(255)
+      notnull: true 
+    class:
+      type: string(255)
+      notnull: true
+    level:
+      type: enum
+      values: [1,2,3]      
+  actAs:
+    Sortable: 
+    Timestampable:
+    I18n: 
+      fields: [name]
+      actAs:
+        Sluggable: {fields: [name], uniqueBy: [lang, name] }     
+sfGuardUserProfile:
+  tableName: sf_guard_user_profile
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    user_id:
+      type: integer(5)
+      notnull: true
+    internal_class_id:
+      type: integer(3)
+      notnull: true
+    email:
+      type: string(80)    
+    validate:
+      type: string(17)
+    #para quien se quiera dar de alta como grupo de consumo.
+    #valores:
+    #0: no se da de alta como grupo de consumo, puede ser consumidor, productor o distribuidor 
+    #1: se da de alta como grupo de consumo. Tendrá que rellenar su perfil y el del grupo
+    #2: se ha dado de alta como grupo de consumo. Ha rellenado su perfil pero no el del grupo
+    #3: se ha dado de alta como grupo de consumo y ha rellenado tanto el perfil de consumidor como el del grupo
+    profile_group:
+      type: integer(3)
+      notnull: true
+  # Don't forget this!
+  relations:
+    InternalClass:
+      local: internal_class_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    User:
+      class: sfGuardUser
+      foreign: id
+      local: user_id
+      type: one  
+      onDelete: cascade    
+      foreignType: one
+      foreignAlias: Profile
+News: 
+  tableName: news
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    category_id:
+      type: integer(3)
+      notnull: true
+    name:
+      type: string(255)
+      notnull: true
+    content:
+      type: string(2147483647)
+      notnull: true
+    image:
+      type: string(255)
+      notnull: false
+    published:
+      type: boolean
+      notnull: true
+      default: 1
+  actAs:    
+    Timestampable:
+    Sortable:    
+    I18n:
+      fields: [name, content]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang] }       
+  relations:
+    Category: 
+      local: category_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+Category:
+  tableName: category
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name: 
+      type: string(255)
+      notnull: true
+    image_category:
+      type: string(255)
+      notnull: true
+    description:
+      type: string(2147483647)
+      notnull: true    
+  actAs:
+    Sortable:
+    Timestampable: 
+    I18n: 
+      fields: [name, description]
+      actAs:
+        Sluggable: {fields: [name], uniqueBy: [lang, name] }     
+Home: 
+  tableName: home
+  columns: 
+    id: 
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    object_id:
+      type: integer(3)
+      notnull: true
+    object_class:
+      type: string(100)
+      notnull: true
+  actAs: 
+    Sortable: 
+    Timestampable:
+LinkCategory:
+  tableName: link_category
+  columns: 
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true    
+    name:
+      type: string(255)
+      notnull: true
+    content:
+      type: string(2147483647)
+      notnull: false
+  actAs:    
+    Timestampable:
+    Sortable:    
+    I18n:
+      fields: [name, content]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang] }
+Link: 
+  tableName: link
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true 
+    link_category_id:
+      type: integer(3)
+      notnull: false
+    name:
+      type: string(255)
+      notnull: true
+    content:
+      type: string(2147483647)
+      notnull: true
+    image:
+      type: string(255)
+      notnull: false  
+    http:
+      type: string(255)
+      notnull: true
+  actAs:    
+    Timestampable:
+    Sortable:    
+    I18n:
+      fields: [name, content]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang] }
+  relations:    
+    LinkCategory: 
+      local: link_category_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE      
+AceptedProviderConsumerGroup:
+  tableName: acepted_provider_consumer_group
+  columns:    
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true    
+    provider_id:
+      type: integer(3)
+      notnull: true
+    consumer_group_id:
+      type: integer(3)
+      notnull: true      
+    provider_consumer_trust_id:
+      type: integer(3)
+      notnull: true  
+    acepted_provider_state_id:
+      type: integer(3)
+      notnull: true
+  relations:
+    Provider:
+      foreignAlias: AceptedProviderConsumerGroup
+      onDelete: CASCADE
+      onUpdate: CASCADE    
+    ConsumerGroup:
+      foreignAlias: AceptedProviderConsumerGroup
+      onDelete: CASCADE
+      onUpdate: CASCADE     
+    Consumer: 
+      local: provider_consumer_trust_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE  
+    AceptedProviderState: 
+      local: acepted_provider_state_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE  
+  actAs:    
+    Timestampable:
+    Sortable:          
+AceptedProviderState:
+  tableName: acepted_provider_state
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      notnull: true    
+  actAs:
+    Sortable:    
+    I18n:
+      fields: [name]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang, name] }        
+Orders:
+  tableName: orders
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      notnull: true     
+    provider_id:
+      type: integer(3)
+      notnull: true
+    consumer_group_id:
+      type: integer(3)
+      notnull: true      
+    date_in:
+      type: date
+      notnull: true
+    date_out:
+      type: date
+      notnull: true
+    shipping_mode_id:
+      type: integer(3)
+      notnull: true
+    payment_method_id:
+      type: integer(3)
+      notnull: true  
+    order_state_id:
+      type: integer(3)
+      notnull: true
+    consumer_id:
+      type: integer(3)
+      notnull: true
+    group_comment:
+      type: string(2147483647)
+      notnull: false
+    provider_comment:
+      type: string(2147483647)
+      notnull: false
+    reject_comment:
+      type: string(2147483647)
+      notnull: false
+    group_creation_date:
+      type: date
+      notnull: false
+    group_close_date:
+      type: date
+      notnull: false
+    group_send_to_provider_date:
+      type: date
+      notnull: false
+    provider_accept_date:
+      type: date
+      notnull: false
+    provider_finalize_date:
+      type: date
+      notnull: false
+    provider_send_to_group_date:
+      type: date
+      notnull: false
+    group_receive_date:
+      type: date
+      notnull: false
+    provider_reject_date:
+      type: date
+      notnull: false
+  actAs:
+    Sortable:
+    Sluggable: { fields: [name], uniqueBy: [] }        
+    Timestampable:
+  relations:
+    ConsumerGroup: 
+      local: consumer_group_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE  
+    Provider: 
+      local: provider_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    ShippingMode: 
+      local: shipping_mode_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE    
+    PaymentMethod: 
+      local: payment_method_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE  
+    OrderState: 
+      local: order_state_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    Consumer: 
+      local: consumer_id
+      foreign: id      
+      type: one
+      foreignType: one
+      onDelete: CASCADE
+      onUpdate: CASCADE      
+OrderState:
+  tableName: order_state
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      notnull: true    
+  actAs:
+    Sortable:    
+    I18n:
+      fields: [name]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang, name] }      
+ConsumerOrder:
+  tableName: consumer_order
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    order_id:
+      type: integer(3)
+      notnull: true
+    consumer_id:
+      type: integer(3)
+      notnull: true   
+    product_id:
+      type: integer(3)
+      notnull: true  
+    provider_id:
+      type: integer(3)
+      notnull: true 
+    provider_product_id:
+      type: integer(3)
+      notnull: true
+    amount:
+      type: float(10,3)
+      notnull: true  
+    consumer_order_state_id:
+      type: integer(3)
+      notnull: true
+  relations:
+    ConsumerOrderState: 
+      local: consumer_order_state_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    Consumer: 
+      local: consumer_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    Product: 
+      local: product_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    Orders: 
+      local: order_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    Provider: 
+      local: provider_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    ProviderProduct: 
+      local: provider_product_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+  actAs:
+    Sortable:
+    Timestampable:     
+  indexes:
+    order_index:
+      fields:
+        order_id: []       
+        consumer_id: []        
+        provider_product_id: []      
+        consumer_order_state_id: []         
+      type: unique  
+ConsumerOrderState:       
+  tableName: consumer_order_state
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      notnull: true    
+  actAs:
+    Sortable:    
+    I18n:
+      fields: [name]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang, name] }      
+Landing:
+  tableName: landing
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true      
+    name:
+      type: string(255)
+      notnull: true
+    route:
+      type: string(255)
+      notnull: true   
+    menu_link:
+      type: string(255)
+      notnull: true   
+    image:
+      type: string(255)
+      notnull: false
+    content:
+      type: string(2147483647)
+      notnull: true 
+  indexes:
+    route:
+      fields:
+        route: []
+      type: unique             
+  actAs:
+    Sortable:   
+    Timestampable:  
+    I18n:
+      fields: [name, content, menu_link]
+      actAs: 
+        Sluggable: { fields: [name], uniqueBy: [lang, name] }
+Faq:
+  tableName: faq
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true      
+    question:
+      type: string(255)
+      notnull: true
+    answer:
+      type: string(2147483647)
+      notnull: true            
+  actAs:
+    Sortable:   
+    Timestampable:  
+    I18n:
+      fields: [question, answer]
+      actAs: 
+        Sluggable: { fields: [question], uniqueBy: [lang, question] }                                
+#Esto es para mostrar grupos y proveedores en el mapa que no se hayan registrado. Creamos esta tabla para poder meterlos a mano y luego se muestran en el mapa
+MapObject:
+  tableName: map_object
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      notnull: true    
+    state_id: 
+      type: integer(3)
+      notnull: true
+    city_id:
+      type: integer(3)
+      notnull: true
+    map_object_type_id:
+      type: integer(3)
+      notnull: true
+    contact:
+      type: boolean
+    email: 
+      type: string(255)
+      notnull: false
+  relations:       
+    City: 
+      local: city_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE      
+    State: 
+      local: state_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    MapObjectType: 
+      local: map_object_type_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE  
+  actAs:   
+    Timestampable:  
+MapObjectType:
+  tableName: map_object_type
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      notnull: true
+    class:
+      type: string(255)
+      notnull: true
+ConsumerGroupInvitation:
+  tableName: consumer_group_invitation
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    email:
+      type: string(255)
+      notnull: true
+    consumer_group_id:
+      type: integer(3)
+      notnull: true
+    consumer_host_id:
+      type: integer(3)
+      notnull: true
+    invitation_code:
+      type: string(17)
+      notnull: true
+    invitation_status_id:
+      type: integer(3)
+      notnull: true
+  actAs:   
+    Timestampable:
+  relations:
+    ConsumerGroup: 
+      local: consumer_group_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE  
+    Consumer: 
+      local: consumer_host_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE  
+    InvitationStatus: 
+      local: invitation_status_id
+      foreign: id
+      type: one
+      onDelete: CASCADE
+      onUpdate: CASCADE  
+InvitationStatus:
+  tableName: invitation_status
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      notnull: true      
+BasketProviderProduct:
+  tableName: basket_provider_product
+  columns:
+    id:
+      type: integer(3)
+      primary: true
+      autoincrement: true  
+    basket_id:
+      type: integer(3)
+      notnull: true
+    provider_product_id:
+      type: integer(3)
+      notnull: true
+    amount:
+      type: float(10,3)
+      notnull: true
+  relations:
+    ProviderBakset:
+      class:   ProviderProduct    
+      local: basket_id
+      foreign: id
+      foreignAlias: BasketProviderProduct
+      onDelete: CASCADE
+      onUpdate: CASCADE    
+    ProviderProduct:      
+      class:   ProviderProduct    
+      local: provider_product_id
+      foreign: id
+      foreignAlias: BasketProviderProduct
+      onDelete: CASCADE
+      onUpdate: CASCADE 

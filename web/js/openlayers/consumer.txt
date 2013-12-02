@@ -1,0 +1,7 @@
+lat	lon	title	description	iconSize	iconOffset	icon
+42.901002	-8.631333	tqwet(Consumidora/or)	Ames<br /><a href="/frontend_dev.php/consumer/profile/id/7">Ver perfil</a>	32,37	-15,-37	/images/icons/consumer.png	
+42.426442	-3.080017	otro (Consumidora/or)	Bascuñana<br /><a href="/frontend_dev.php/consumer/profile/id/6">Ver perfil</a>	32,37	-15,-37	/images/icons/consumer.png	
+40.047692	-4.521818	conuerees(Consumidora/or)	Casar de Escalona (El)<br /><a href="/frontend_dev.php/consumer/profile/id/2">Ver perfil</a>	32,37	-15,-37	/images/icons/consumer.png	
+39.986089	-4.231763	Pedro del mar(Consumidora/or)	Barcience<br /><a href="/frontend_dev.php/consumer/profile/id/1">Ver perfil</a>	32,37	-15,-37	/images/icons/consumer.png	
+39.943631	-4.01797	singrupo(Consumidora/or)	Bargas<br /><a href="/frontend_dev.php/consumer/profile/id/5">Ver perfil</a>	32,37	-15,-37	/images/icons/consumer.png	
+39.887079	-3.475729	Usuaria1(Consumidora/or)	Dosbarrios<br /><a href="/frontend_dev.php/consumer/profile/id/3">Ver perfil</a>	32,37	-15,-37	/images/icons/consumer.png	
